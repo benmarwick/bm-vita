@@ -59,29 +59,22 @@
 \def\mybibliostyle{plain}
 \def\mybibliocommand{}
 \def\mysubtitle{}
-\def\myaffiliation{Duke University}
-\def\myaddress{Sociology Department}
-\def\myemail{kjhealy@soc.duke.edu}
-\def\myweb{http://www.kieranhealy.org}
-\def\myphone{(919) 660-5737}
-\def\myfax{(919) 660-5623}
-\def\mytwitter{@kjhealy}
+\def\myaffiliation{University of Washington}
+\def\myaddress{Anthropology Department}
+\def\myemail{bmarwick@uw.edu}
+\def\myweb{http://faculty.washington.edu/bmarwick/ }
+\def\myphone{(206) 552-9450}
+\def\myfax{(206) 543-3285}
+\def\mytwitter{@benmarwick}
 \def\myversion{}
 \def\myrevision{}
 
 
-\def\myaffiliation{Duke University}
-\def\myauthor{Kieran Healy}
+\def\myaffiliation{University of Washington}
+\def\myauthor{Ben Marwick}
 \date{} % not used (revision control instead)
-\def\mykeywords{Kieran, Healy, Kieran Healy, Vita, CV, Resume, Sociology}
+\def\mykeywords{}
 
-%%%------------------------------------------------------------------------  
-%%% Git version tracking 
-%%%------------------------------------------------------------------------
-
-%% If you don't use git or the vc package (from CTAN), comment this out.
-%% If you comment it out, be sure to remove the \rfoot comment below, too.
-%% \input{vc}
 
 %%%------------------------------------------------------------------------
 %%% Document
@@ -89,10 +82,10 @@
 \begin{document}
 
 %% Choose fonts for use with xelatex
-%% Minion and Myriad are widely available, from Adobe. 
-%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
-%% and is worth every penny. Any good monospace font will work fine, though.
-%% Consolas or inconsolata are good alternatives.
+%% Using free fonts with big glyph sets for maximum flexibility  
+%% http://www.linuxlibertine.org/index.php?id=2&L=1
+%% http://font.ubuntu.com/
+
 \setromanfont[Mapping={tex-text}, 
 	Numbers={OldStyle},
 	Ligatures={Common}]{Linux Libertine}
@@ -121,7 +114,7 @@
 
 
 %% [optional] custom ampersand (font consistent with the one chosen above)
-% \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Linux Libertine}\selectfont\&\,}}
+\newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Linux Libertine}\selectfont\&\,}}
 
 %% No bullets on labels
 \renewcommand{\labelitemi}{~} 
@@ -139,9 +132,9 @@
 % These lines will insert git revision info in the footer, using the vc
 % package---see docs for vc package for details. Comment out this line
 % if you're not using vc, and also remove the \input{vc} line above.
-%% \pagestyle{kjh}
-%% \thispagestyle{kjhgit}
-\gitAbbrevHash{}
+\pagestyle{kjh}
+\thispagestyle{kjhgit}
+
 
 
 %%%------------------------------------------------------------------------
@@ -149,7 +142,7 @@
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
  \flushright {\footnotesize 
- \href{http://sociology.duke.edu}{Department of Sociology}, \\ Box 90088, \\ Duke University, \\ \vspace{-0.05in} Durham, \textsc{nc} 27708.}  
+ \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}  
   
 \end{minipage}
 \hfill     
@@ -157,9 +150,9 @@
 % dummy (needed here)
 %\end{minipage}
 \hfill
-\begin{minipage}[t]{1.3in}
+\begin{minipage}[t]{1.7in}
   \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
-  {\scriptsize  \texttt{\href{http://twitter.com/kjhealy}{\mytwitter}} \, \faTwitter }  \\ 
+  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
   {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
 \end{minipage}
@@ -167,7 +160,7 @@
 \medskip
 
 %% Name 
-\noindent{\LARGE\scheader \textsc{kieran healy}}
+\noindent{\LARGE\scheader \textsc{ben marwick}}
 \reversemarginpar
 
 \bigskip       
@@ -177,7 +170,7 @@
 % \medskip
 \marginhead{\sffamily appointments}
 
-\ind Associate Professor in Sociology and the Kenan Institute for Ethics, Duke University, 2009--Present.      
+\ind Assistant Professor in Archaeology,  University of Washington, 2008--Present.      
 
 \ind Visiting Associate Professor of Sociology, Duke University, 2008--2009.
 
@@ -196,20 +189,15 @@ Research School of Social Sciences, Australian National University, 2003--2006.
 
 %\noindent\emph{Princeton University \vspace{0.01in}}
 
-\ind Ph.D, Sociology, Princeton University, 2001.
+\ind Ph.D, Archaeology and Natural History, Australian National University, 2008.
 
-\ind \hspace{0.35in} \footnotesize Dissertation: \emph{Exchange in Blood and Organs}.\newline Winner, American Sociological Association's Dissertation Award.\normalsize \vspace{0.05in}
+\ind \hspace{0.35in} \footnotesize Dissertation: \emph{\href{http://dx.doi.org/10.6084/m9.figshare.765252}{Stone artefacts and human ecology at two rockshelters in Northwest Thailand}} \normalsize \vspace{0.05in}
 
-\ind M.A., Sociology, Princeton University, 1998. 
+\ind M.A., Archaeology, University of Western Australia, 2002. 
 
-%\medskip
-%\noindent\emph{National University of Ireland (Cork)\vspace{0.02in}}
+\ind \hspace{0.35in} \footnotesize Dissertation: \emph{\href{http://dx.doi.org/10.6084/m9.figshare.765251}{ Inland Pilbara Archaeology: A Study of Variation in Aboriginal Occupation over Time and Space on the Hamersley Plateau}} \normalsize \vspace{0.05in}
 
-\ind M.A., Sociology, First Class, National University of Ireland (Cork), 1994.
-
-\ind \hspace{0.35in} \footnotesize Thesis: \emph{The Language of Influence: Public Debate and the Politics of the X-case.} \normalsize \vspace{0.01in}
-
-\ind B.A. (Joint Hons.), First Class, National University of Ireland (Cork), 1993.
+\ind B.A. (Hons.), First Class, University of Western Australia, 1999.
 
 \bigskip
  

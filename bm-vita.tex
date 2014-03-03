@@ -1,9 +1,12 @@
 %%% A template to produce a nice-looking Curriculum Vitae.
-%%% Kieran Healy <kjhealy@gmail.com>
-%%% Most recent version is at http://kjhealy.github.com/kjh-vita
+%%% Originally from Kieran Healy <kjhealy@gmail.com>
+%%% Kieran's source is at http://kjhealy.github.com/kjh-vita
 %%%
+%%% This source code has been adapted by 
+%%% Ben Marwick <benmarwick@gmail.com>
 %%% ------------------------------------------------------------------------
-%%% Requirements that are included in a modern tex distribution:
+%%% Requirements for this docuemnt that are included
+%%%  in (or otherwise easily obtained) a modern tex distribution:
 %%% ------------------------------------------------------------------------
 %%% xelatex
 %%% fontspec.sty
@@ -14,7 +17,7 @@
 %%% fancyhdr.sty
 %%% memoir.cls
 %%% fontawesome.sty
-%%%
+%%% gitinfo.sty
 %%% 
 %%% 
 %%% ------------------------------------------------------------------------
@@ -23,14 +26,7 @@
 %%% org-preamble-xelatex.sty
 %%% memoir-article-styles.sty
 %%%
-%%% ------------------------------------------------------------------------
-%%% Optional
-%%% ------------------------------------------------------------------------
-%%% git
-%%% vc.sty
-%%% revnum.sty
-%%% Fonts
-%%%
+%%% 
 %%% ------------------------------------------------------------------------
 %%% Note
 %%%------------------------------------------------------------------------
@@ -51,9 +47,8 @@
 %%% Metadata
 %%%------------------------------------------------------------------------
 
-%% Change as needed. Or just add me as a coauthor. Only some of these are 
-%% used below in the hyperref declaration and address banner section.
-\def\myauthor{Ben Mawick}
+%% Change as needed.
+\def\myauthor{Ben Marwick}
 \def\mytitle{Vita}
 \def\mycopyright{\myauthor}
 \def\mykeywords{}
@@ -130,9 +125,9 @@
 %%% Page layout
 %%%------------------------------------------------------------------------
 
-% These lines will insert git revision info in the footer, using the vc
-% package---see docs for vc package for details. Comment out this line
-% if you're not using vc, and also remove the \input{vc} line above.
+% These lines will insert git revision info in the footer, using the gitinfo
+% package---see docs for gitinfo package for details. Comment out this line
+% if you're not using git.
 \pagestyle{kjh}
 \thispagestyle{kjhgit}
 
@@ -171,24 +166,21 @@
 % \medskip
 \marginhead{\sffamily appointments}
 
-\ind Assistant Professor in Archaeology,  University of Washington, 2008--Present.      
+\ind Assistant Professor in Archaeology,  University of Washington, 2011--Present.   
 
-\ind Visiting Associate Professor of Sociology, Duke University, 2008--2009.
+\ind Post-Doctoral Fellow, ACLS/Luce Foundation,  University of Washington, 2010-11.      
 
-\ind Associate Professor of Sociology, University of Arizona, 2008.
+\ind Assistant Professor in Archaeology,  University of Washington, 2008--2010.    
 
-\ind Research Fellow, Social and Political Theory Program,
-Research School of Social Sciences, Australian National University, 2003--2006.
+\ind Consultant Archaeologist, Huonbrook Environment and Heritage, South Australia, 2006--2008.
 
-\ind Assistant Professor of Sociology, University of Arizona, 2001--2008.
+\ind Research Associate, Society, State and Governance in Melanesia Project and The Pacific Centre, Research School of Pacific and Asian Studies, The Australian National University, 2006--2008.
 
 \bigskip
 
 %% Education
 
-\marginhead{\sffamily {{\vskip -0.23em} education}}
-
-%\noindent\emph{Princeton University \vspace{0.01in}}
+\marginhead{\sffamily {{\vskip -0.35em} education}}
 
 \ind Ph.D, Archaeology and Natural History, Australian National University, 2008.
 
@@ -208,6 +200,53 @@ Research School of Social Sciences, Australian National University, 2003--2006.
 \ind B.A. (Hons.), First Class, University of Western Australia, 1999.
 
 \bigskip
+
+%% Research projects, grants, contracts
+
+\marginhead{\sffamily {{\vskip 0.1em} research projects  \newline \& grants}}
+\medskip
+
+\ind  Deutscher Akademischer Austausch Dienst, Research Visit Travel Grant (2014, sole PI, TDC USD 6,000)
+
+\ind  ``Micromorphology at key archaeological sites at the end of the arc of modern human dispersal", UW Royalty Research Fund, (2013, sole PI, TDC USD 31,005)
+
+\ind  Marwick, B and S. Kwak. ``Long-term chronology of subsistence and the role of intensive rice agriculture in the central part of the prehistoric Korean peninsula", National Science Foundation Doctoral Dissertation Research Improvement Grant, (2013,  PI with graduate student, TDC USD 23,373)
+
+\ind  Roberts, Richard, Mokhtar Saidin, Ben Marwick, Dong Truong Nguyen, Nigel Spooner, Regina DeWitt, Anatoly Rosenfeld, Zenobia Jacobs, Bo Li, Susanna Guatelli, Chris Clarkson, Adam Brumm and Kat Szabó ``Out of Asia: unique insights into human evolution and interactions using frontier technologies in archaeological science".  Australian Research Council (2013, TDC AUD 
+3,182,338)
+
+\ind Lewis, H. and B. Marwick,  University College Dublin Seed Funding. University College Dublin (July 2012, Co-PI, TDC EUR 5,200.00) 
+
+\ind Vice Provost’s International Faculty Exchange Grant (2012, PI, TDC USD 3500)
+
+\ind  ``Investigating modern human origins and early behavioural complexity in Australia", UW Office of Research Trans-Pacific Early Career Academic Fellowship (2011, sole PI, TDC USD 13,125)
+
+\ind UW Office of Global Affairs Herbert H. Gowen International Studies Award (2011, sole PI, TDC USD 2,500)
+
+\ind O’Connor. S., J. Fenner, J. Stevenson, K. Dobney, B. Marwick, E. St Pierre and G. Larson ``The Archaeology of Sulawesi: A Strategic Island for Understanding Modern Human Colonization and Interactions Across our Region", Australian Research Council (March 2010, Co-PI, TDC AUD 1,757,919)
+
+\ind Clarkson, C., B. Marwick, L. Wallis, M. Smith and R. Fullgar  ``Modern Human Origins and Early Behavioural Complexity in Australia and South East Asia", Australian Research Council (March 2010). (Co-PI, TDC AUD 1,189,790)
+
+\ind UW Centre for Statistics in the Social Sciences Undergraduate Research Grant (2010, sole PI, TDC USD 4,480)
+
+\ind American Council  of Learned Societies/Luce Foundation Postdoctoral Fellowship (2010-2011, sole PI, TDC USD 36,000)
+
+\ind UW Office of Global Affairs Herbert H. Gowen International Studies Award (2010,sole  PI, TDC USD 5,000)
+
+\ind UW Centre for Statistics in the Social Sciences Seed Grant (2009,sole PI, TDC USD 18,347)
+
+\ind Dorothy Cameron Prize for best archaeological publication at The Australian National University (2008, AUD 500)
+
+\ind Postgraduate Research Grant, Australian Institute of Nuclear Science and Technology( 2007, sole PI, TDC AUD 5,000)
+
+\marginhead{\sffamily {\vskip 0.6em}Talks \newline \& presentations}
+\medskip
+
+\ind Residential Fellowship, Center for Advanced Study in the Behavioral Sciences, Stanford University, 2008-09.
+
+\ind Association for Research on Nonprofit Organizations and Voluntary Action (ARNOVA) Outstanding Book Prize, 2007.
+
+\ind Finalist, Society for the Study of Social Problems (SSSP), C. Wright Mills Award, 2007.
  
 %% Publications
 \marginhead{\sffamily {\vskip 0.35em} publications}

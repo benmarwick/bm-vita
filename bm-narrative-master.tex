@@ -1,0 +1,206 @@
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% Originally from Kieran Healy <kjhealy@gmail.com>
+%%% Kieran's source is at http://kjhealy.github.com/kjh-vita
+%%%
+%%% This source code has been adapted by 
+%%% Ben Marwick <benmarwick@gmail.com> and is largely
+%%% determined by the instructions here:
+%%% https://admin.artsci.washington.edu/promotion-and-tenure-documentation#curriculum
+%%%
+%%% questions: where to put on campus presentation on scholarly and teaching topics?
+%%% ------------------------------------------------------------------------
+%%% Requirements for this docuemnt that are included
+%%%  in (or otherwise easily obtained) a modern tex distribution:
+%%% ------------------------------------------------------------------------
+%%% xelatex (I'm using MiKTeX & Texmaker)
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%% memoir.cls
+%%% fontawesome.sty
+%%% gitinfo.sty
+%%% 
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Requirements from https://github.com/kjhealy/latex-custom-kjh
+%%% ------------------------------------------------------------------------
+%%% org-preamble-xelatex.sty
+%%% memoir-article-styles.sty
+%%%
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+\documentclass[11pt,article,oneside]{memoir}   
+\usepackage{microtype}
+\usepackage{org-preamble-xelatex} 
+\usepackage{fontawesome,url}
+\usepackage{setspace}
+\usepackage[footinfo]{gitinfo}
+
+
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed.
+\def\myauthor{Ben Marwick}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{University of Washington}
+\def\myaddress{Anthropology Department}
+\def\myemail{bmarwick@uw.edu}
+\def\myweb{http://faculty.washington.edu/bmarwick/ }
+\def\myphone{(206) 552-9450}
+\def\myfax{(206) 543-3285}
+\def\mytwitter{@benmarwick}
+\def\myversion{}
+\def\myrevision{}
+
+
+\def\myaffiliation{University of Washington}
+\def\myauthor{Ben Marwick}
+\date{} % not used (revision control instead)
+\def\mykeywords{}
+
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Using free fonts with big glyph sets for maximum flexibility  
+%% http://www.linuxlibertine.org/index.php?id=2&L=1
+%% http://font.ubuntu.com/
+
+\setromanfont[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Linux Libertine}
+\setsansfont[Mapping=tex-text,
+	Ligatures={Common}, 
+	Colour=AA0000]{Linux Biolinum}
+\setmonofont[Mapping=tex-text,Scale=0.72]{Ubuntu} 
+
+\newfontface\scheader[SmallCapsFont={Linux Libertine},SmallCapsFeatures={Letters=SmallCaps}]{Linux Libertine}
+
+\newfontface\addressblock[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Linux Libertine}
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+\newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
+
+
+%% [optional] custom ampersand (font consistent with the one chosen above)
+\newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Linux Libertine}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+
+% These lines will insert git revision info in the footer, using the gitinfo
+% package---see docs for gitinfo package for details. Comment out this line
+% if you're not using git.
+\pagestyle{kjh}
+\thispagestyle{kjhgit}
+
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{2.95in}
+ \flushright {\footnotesize 
+ \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}  
+  
+\end{minipage}
+\hfill     
+%\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+%\end{minipage}
+\hfill
+\begin{minipage}[t]{1.7in}
+  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+\end{minipage}
+
+\medskip
+
+%% Name 
+\noindent{\LARGE\scheader \textsc{personal statement}}
+\reversemarginpar
+
+\bigskip       
+
+% Personal statement for tenure
+% http://admin.artsci.washington.edu/promotion-and-tenure-documentation#candidates
+
+% The statement should not be longer than three to five pages.
+%
+% In the discussion of research or scholarship, a short essay is more effective than an annotated list of works. The candidate's research contributions might be described in the broader context of the discipline as a whole, explaining how his or her research agenda fits into the discipline and then how particular scholarly or creative contributions fit into this agenda. The essay should also include the candidate's statement of future directions and how these connect to previous and current work, in order to give a sense of the trajectory of the work.
+%
+% The personal statement should contain as well a discussion of the candidate's teaching experience, with an overview of the candidate's goals, a review of successes and failures, reflections on these experiences, and thoughts of what lies ahead. Lastly, the candidate should describe any significant service contributions.
+
+% ideas...
+% http://www.insidehighered.com/advice/2010/11/10/narrative
+% http://www.slideshare.net/UO-AcademicAffairs/writing-a-tenure-statement-2011
+
+\bigskip       
+
+
+\marginhead{\sffamily introduction}
+
+For some reviewers this may only be that part of your narrative that will be read in detail; the remainder may be skimmed. Try to strike the right balance between too much technical jargon and a clear explanation of the different facets of your science. State your career goals, highlight your major contributions to date, and present a clear vision of where you're heading in the near future.
+
+\bigskip     
+
+\marginhead{\sffamily research \newline trajectory}
+
+Tell the reader what it is that you do, why you're excited about the science, and why it's an interesting (valuable) line of inquiry. What are the principle scientific questions that drive your research interests? What is your vision for your future research? Mention the number of publications since joining the faculty at your institution, as well as the number and total amount of grant awards since joining the faculty. When highlighting your research productivity explain co-authored publications, especially when you take secondary authorship to one of your students.
+
+\bigskip     
+
+\marginhead{\sffamily teaching}
+
+Describe your philosophy regarding the teaching and training of the next generation of scientists and, if appropriate non-scientists (for example, general education students or future K-12 teachers). Prepare a table that summarizes your teaching activity semester by semester (including course number, course title, number of students, and course evaluation information); acknowledge if the course is co-taught.
+
+\bigskip     
+
+\marginhead{\sffamily service} 
+
+Prepare a table that summarizes your service contributions to the department, college \& or university, and profession (including leadership roles and dates of service). Describe how your service contributions support the mission of your department and of your institution.
+
+\end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  17 MAR 2014 00:52
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  17 MAR 2014 12:01
 entering extended mode
 **bm-narrative-master.tex
 ("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.tex"
@@ -1192,10 +1192,10 @@ sty
 Package: fontawesome 2013/05/10 v3.1.1 font awesome icons
 \g__file_internal_ior=\read3
 Requested font "FontAwesome" at 10.0pt
- -> ^^95^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/font
-awesome/FontAwesome.otf
+ -> ^^F^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fonta
+wesome/FontAwesome.otf
 Requested font "FontAwesome/ICU" at 10.0pt
- -> ¼^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+ -> -^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
 some/FontAwesome.otf
 .................................................
 . fontspec info: "no-scripts"
@@ -1204,31 +1204,36 @@ some/FontAwesome.otf
 .................................................
 \g_fontspec_family_FontAwesome_int=\count393
 Requested font "FontAwesome/ICU" at 10.0pt
- -> ð^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+ -> a^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
 some/FontAwesome.otf
 Requested font "FontAwesome/ICU" at 10.0pt
- -> ÿÿ/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontaweso
-me/FontAwesome.otf
+ -> T^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+some/FontAwesome.otf
 Requested font "FontAwesome/B/ICU" at 10.0pt
- -> ^^\
+ -> n^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+some/FontAwesome.otf
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font FontAwesome/B (it probably doesn't exist).
 .................................................
 Requested font "FontAwesome/ICU" at 10.0pt
- -> ^^O
+ -> {^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+some/FontAwesome.otf
 Requested font "FontAwesome/I/ICU" at 10.0pt
- -> )
+ -> ^^88^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/font
+awesome/FontAwesome.otf
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font FontAwesome/I (it probably doesn't exist).
 .................................................
 Requested font "FontAwesome/ICU" at 10.0pt
- -> 6
+ -> ^^95^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/font
+awesome/FontAwesome.otf
 Requested font "FontAwesome/BI/ICU" at 10.0pt
- -> C
+ -> ¢^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+some/FontAwesome.otf
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1247,12 +1252,18 @@ Requested font "FontAwesome/BI/ICU" at 10.0pt
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\gitinfo\gitinfo.sty"
 Package: gitinfo 2011/08/10 v1.00 git revision information
 
+("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\gitHeadInfo.gin")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\gitinfo\gitsetinfo.sty"
+Package: gitsetinfo 2011/08/10 v1.00 Auxiliary package for gitinfo
 
-Package gitInfo Warning: I can't find the file `gitHeadInfo.gin`.
-(gitInfo)                All git metadata has been set to ``(None)''. on input 
-line 57.
-
+(C:\Users\marwick\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\marwick\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+\@xs@message=\write5
+\integerpart=\count394
+\decimalpart=\count395
 )
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'american' -> 'cms-american'...
@@ -1387,7 +1398,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count396
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1397,7 +1408,7 @@ LaTeX Info: Redefining \pageref on input line 84.
 LaTeX Info: Redefining \nameref on input line 84.
 ("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.out")
 ("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.out")
-\@outlinefile=\write5
+\@outlinefile=\write6
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
@@ -1412,7 +1423,7 @@ Requested font "Linux Libertine" at 10.95pt
  -> Þ^^A/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> ó^^A/Windows/Fonts/LinLibertine_Rah.ttf
-\g_fontspec_family_Linux Libertine_int=\count395
+\g_fontspec_family_Linux Libertine_int=\count397
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> ^^H^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
@@ -1487,7 +1498,7 @@ Requested font "Linux Biolinum" at 10.95pt
  -> ©^^B/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Biolinum/ICU" at 10.95pt
  -> °^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-\g_fontspec_family_Linux Biolinum_int=\count396
+\g_fontspec_family_Linux Biolinum_int=\count398
 Requested font "Linux Biolinum/ICU" at 10.95pt
  -> ·^^B/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Biolinum/ICU" at 10.95pt
@@ -1564,30 +1575,31 @@ AA0000FF
 . ;"
 .................................................
 Requested font "Ubuntu" at 10.95pt
- ->  ^^[/Windows/Fonts/Ubuntu-R.ttf
+ -> ¿^^A/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ×^^[/Windows/Fonts/Ubuntu-R.ttf
-\g_fontspec_family_Ubuntu_int=\count397
+ -> ö^^A/Windows/Fonts/Ubuntu-R.ttf
+\g_fontspec_family_Ubuntu_int=\count399
 Requested font "Ubuntu/ICU" at 10.95pt
- -> á^^[/Windows/Fonts/Ubuntu-R.ttf
+ -> 
 Requested font "Ubuntu/ICU" at 10.95pt
- -> æ^^[/Windows/Fonts/Ubuntu-R.ttf
+ -> ^^E^^B/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/B/ICU" at 10.95pt
- -> ë^^[/Windows/Fonts/Ubuntu-B.ttf
+ -> 
+^^B/Windows/Fonts/Ubuntu-B.ttf
 Requested font "Ubuntu/B/ICU" at 10.95pt
- -> õ^^[/Windows/Fonts/Ubuntu-B.ttf
+ -> ^^T^^B/Windows/Fonts/Ubuntu-B.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ú^^[/Windows/Fonts/Ubuntu-R.ttf
+ -> ^^Y^^B/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/I/ICU" at 10.95pt
- -> ÿ^^[/Windows/Fonts/Ubuntu-RI.ttf
+ -> ^^^^^B/Windows/Fonts/Ubuntu-RI.ttf
 Requested font "Ubuntu/I/ICU" at 10.95pt
- -> ^^D^^\/Windows/Fonts/Ubuntu-RI.ttf
+ -> #^^B/Windows/Fonts/Ubuntu-RI.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ^^D^^\/Windows/Fonts/Ubuntu-R.ttf
+ -> #^^B/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> ^^I^^\/Windows/Fonts/Ubuntu-BI.ttf
+ -> (^^B/Windows/Fonts/Ubuntu-BI.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> ^^N^^\/Windows/Fonts/Ubuntu-BI.ttf
+ -> -^^B/Windows/Fonts/Ubuntu-BI.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1656,8 +1668,8 @@ Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 9.0pt
  -> º^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "FontAwesome/ICU:" at 9.0pt
- -> C:/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontaweso
-me/FontAwesome.otf
+ -> n^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
+some/FontAwesome.otf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `FontAwesome' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1828,13 +1840,15 @@ LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 5.76001pt on input line 155.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 5.76
 001pt
- -> ^^W^^D/Windows/Fonts/Ubuntu-R.ttf
+ -> /
+/Windows/Fonts/Ubuntu-R.ttf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Ubuntu' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Requested font "FontAwesome/ICU:" at 8.0pt
- -> ^^91
+ -> ÿÿ/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontaweso
+me/FontAwesome.otf
 Package microtype Info: Character `A' is missing
 (microtype)             in font `\EU1/FontAwesome(0)/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2019,12 +2033,12 @@ LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 7.884pt on input line 206.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 7.88
 4pt
- -> V^^Z/Windows/Fonts/Ubuntu-R.ttf
+ -> u
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 6.48001pt on input line 206.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 6.48
 001pt
- -> ô^^\/Windows/Fonts/Ubuntu-R.ttf
+ -> ^^S^^C/Windows/Fonts/Ubuntu-R.ttf
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -2040,10 +2054,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 206.
 Package logreq Info: Writing requests to 'bm-narrative-master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 33009 strings out of 429025
- 585858 string characters out of 3166798
- 1158217 words of memory out of 3000000
- 35966 multiletter control sequences out of 15000+200000
+ 33308 strings out of 429025
+ 590392 string characters out of 3166798
+ 1165788 words of memory out of 3000000
+ 36256 multiletter control sequences out of 15000+200000
  5778 words of font info for 55 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
  60i,11n,48p,10449b,2428s stack positions out of 5000i,500n,10000p,200000b,50000s

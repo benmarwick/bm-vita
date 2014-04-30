@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  17 MAR 2014 12:01
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  30 APR 2014 01:56
 entering extended mode
 **bm-narrative-master.tex
 ("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.tex"
@@ -1420,30 +1420,30 @@ No file bm-narrative-master.bbl.
 Package biblatex Info: Reference section=0 on input line 84.
 Package biblatex Info: Reference segment=0 on input line 84.
 Requested font "Linux Libertine" at 10.95pt
- -> Þ^^A/Windows/Fonts/LinLibertine_Rah.ttf
-Requested font "Linux Libertine/ICU" at 10.95pt
  -> ó^^A/Windows/Fonts/LinLibertine_Rah.ttf
+Requested font "Linux Libertine/ICU" at 10.95pt
+ -> ^^H^^B/Windows/Fonts/LinLibertine_Rah.ttf
 \g_fontspec_family_Linux Libertine_int=\count397
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> ^^H^^B/Windows/Fonts/LinLibertine_Rah.ttf
-Requested font "Linux Libertine/ICU" at 10.95pt
- -> ^^H^^B/Windows/Fonts/LinLibertine_Rah.ttf
-Requested font "Linux Libertine/B/ICU" at 10.95pt
- -> ^^H^^B/Windows/Fonts/LinLibertine_RZah.ttf
-Requested font "Linux Libertine/B/ICU" at 10.95pt
- -> ^^V^^B/Windows/Fonts/LinLibertine_RZah.ttf
+ -> ^^]^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> ^^]^^B/Windows/Fonts/LinLibertine_Rah.ttf
-Requested font "Linux Libertine/I/ICU" at 10.95pt
- -> ^^]^^B/Windows/Fonts/LinLibertine_RIah.ttf
-Requested font "Linux Libertine/I/ICU" at 10.95pt
- -> +^^B/Windows/Fonts/LinLibertine_RIah.ttf
+Requested font "Linux Libertine/B/ICU" at 10.95pt
+ -> ^^]^^B/Windows/Fonts/LinLibertine_RZah.ttf
+Requested font "Linux Libertine/B/ICU" at 10.95pt
+ -> +^^B/Windows/Fonts/LinLibertine_RZah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> 2^^B/Windows/Fonts/LinLibertine_Rah.ttf
+Requested font "Linux Libertine/I/ICU" at 10.95pt
+ -> 2^^B/Windows/Fonts/LinLibertine_RIah.ttf
+Requested font "Linux Libertine/I/ICU" at 10.95pt
+ -> @^^B/Windows/Fonts/LinLibertine_RIah.ttf
+Requested font "Linux Libertine/ICU" at 10.95pt
+ -> G^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/BI/ICU" at 10.95pt
- -> 2^^B/Windows/Fonts/LinLibertine_RZIah.ttf
+ -> G^^B/Windows/Fonts/LinLibertine_RZIah.ttf
 Requested font "Linux Libertine/BI/ICU" at 10.95pt
- -> @^^B/Windows/Fonts/LinLibertine_RZIah.ttf
+ -> U^^B/Windows/Fonts/LinLibertine_RZIah.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1489,36 +1489,36 @@ Requested font "Linux Libertine/BI/ICU" at 10.95pt
 .................................................
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 10.95pt
- -> G^^B/Windows/Fonts/LinLibertine_Rah.ttf
+ -> \^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertine' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Requested font "Linux Biolinum" at 10.95pt
- -> ©^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-Requested font "Linux Biolinum/ICU" at 10.95pt
- -> °^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-\g_fontspec_family_Linux Biolinum_int=\count398
-Requested font "Linux Biolinum/ICU" at 10.95pt
- -> ·^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-Requested font "Linux Biolinum/ICU" at 10.95pt
- -> ·^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-Requested font "Linux Biolinum/B/ICU" at 10.95pt
- -> ·^^B/Windows/Fonts/LinBiolinum_RBah.ttf
-Requested font "Linux Biolinum/B/ICU" at 10.95pt
- -> ¾^^B/Windows/Fonts/LinBiolinum_RBah.ttf
-Requested font "Linux Biolinum/ICU" at 10.95pt
  -> ¾^^B/Windows/Fonts/LinBiolinum_Rah.ttf
-Requested font "Linux Biolinum/I/ICU" at 10.95pt
- -> ¾^^B/Windows/Fonts/LinBiolinum_RIah.ttf
-Requested font "Linux Biolinum/I/ICU" at 10.95pt
- -> Å^^B/Windows/Fonts/LinBiolinum_RIah.ttf
 Requested font "Linux Biolinum/ICU" at 10.95pt
  -> Å^^B/Windows/Fonts/LinBiolinum_Rah.ttf
+\g_fontspec_family_Linux Biolinum_int=\count398
+Requested font "Linux Biolinum/ICU" at 10.95pt
+ -> Ì^^B/Windows/Fonts/LinBiolinum_Rah.ttf
+Requested font "Linux Biolinum/ICU" at 10.95pt
+ -> Ì^^B/Windows/Fonts/LinBiolinum_Rah.ttf
+Requested font "Linux Biolinum/B/ICU" at 10.95pt
+ -> Ì^^B/Windows/Fonts/LinBiolinum_RBah.ttf
+Requested font "Linux Biolinum/B/ICU" at 10.95pt
+ -> Ó^^B/Windows/Fonts/LinBiolinum_RBah.ttf
+Requested font "Linux Biolinum/ICU" at 10.95pt
+ -> Ó^^B/Windows/Fonts/LinBiolinum_Rah.ttf
+Requested font "Linux Biolinum/I/ICU" at 10.95pt
+ -> Ó^^B/Windows/Fonts/LinBiolinum_RIah.ttf
+Requested font "Linux Biolinum/I/ICU" at 10.95pt
+ -> Ú^^B/Windows/Fonts/LinBiolinum_RIah.ttf
+Requested font "Linux Biolinum/ICU" at 10.95pt
+ -> Ú^^B/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Biolinum/BI/ICU" at 10.95pt
- -> Å^^B/Windows/Fonts/LinBiolinum_RIah.ttf
+ -> Ú^^B/Windows/Fonts/LinBiolinum_RIah.ttf
 Requested font "Linux Biolinum/BI/ICU" at 10.95pt
- -> Å^^B/Windows/Fonts/LinBiolinum_RIah.ttf
+ -> Ú^^B/Windows/Fonts/LinBiolinum_RIah.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1575,31 +1575,30 @@ AA0000FF
 . ;"
 .................................................
 Requested font "Ubuntu" at 10.95pt
- -> ¿^^A/Windows/Fonts/Ubuntu-R.ttf
+ -> |^^C/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ö^^A/Windows/Fonts/Ubuntu-R.ttf
+ -> ³^^C/Windows/Fonts/Ubuntu-R.ttf
 \g_fontspec_family_Ubuntu_int=\count399
 Requested font "Ubuntu/ICU" at 10.95pt
- -> 
+ -> ½^^C/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ^^E^^B/Windows/Fonts/Ubuntu-R.ttf
+ -> Â^^C/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/B/ICU" at 10.95pt
- -> 
-^^B/Windows/Fonts/Ubuntu-B.ttf
+ -> Ç^^C/Windows/Fonts/Ubuntu-B.ttf
 Requested font "Ubuntu/B/ICU" at 10.95pt
- -> ^^T^^B/Windows/Fonts/Ubuntu-B.ttf
+ -> Ñ^^C/Windows/Fonts/Ubuntu-B.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ^^Y^^B/Windows/Fonts/Ubuntu-R.ttf
+ -> Ö^^C/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/I/ICU" at 10.95pt
- -> ^^^^^B/Windows/Fonts/Ubuntu-RI.ttf
+ -> Û^^C/Windows/Fonts/Ubuntu-RI.ttf
 Requested font "Ubuntu/I/ICU" at 10.95pt
- -> #^^B/Windows/Fonts/Ubuntu-RI.ttf
+ -> à^^C/Windows/Fonts/Ubuntu-RI.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> #^^B/Windows/Fonts/Ubuntu-R.ttf
+ -> à^^C/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> (^^B/Windows/Fonts/Ubuntu-BI.ttf
+ -> å^^C/Windows/Fonts/Ubuntu-BI.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> -^^B/Windows/Fonts/Ubuntu-BI.ttf
+ -> ê^^C/Windows/Fonts/Ubuntu-BI.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1621,11 +1620,11 @@ Requested font "Ubuntu/BI/ICU" at 10.95pt
 . <->s*[0.72]"Ubuntu/BI/ICU:script=latn;language=DFLT;mapping=tex-text;"
 .................................................
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1642,9 +1641,9 @@ Requested font "Linux Libertine/ICU" at 10.95pt
 . <->"Linux Libertine/ICU:script=latn;language=DFLT;+smcp;"
 .................................................
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1660,13 +1659,13 @@ Requested font "Linux Libertine/ICU" at 10.95pt
 .................................................
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 9.0pt
- -> {^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ^^90^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;+smcp;" at 9.0pt
- -> ^^9e^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> ³^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 9.0pt
- -> º^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> Ï^^C/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "FontAwesome/ICU:" at 9.0pt
  -> n^^A/Users/marwick/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/fontawe
 some/FontAwesome.otf
@@ -1835,13 +1834,12 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 8.0pt
- -> ³^^C/Windows/Fonts/LinLibertine_Rah.ttf
+ -> È^^C/Windows/Fonts/LinLibertine_Rah.ttf
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 5.76001pt on input line 155.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 5.76
 001pt
- -> /
-/Windows/Fonts/Ubuntu-R.ttf
+ -> ì^^K/Windows/Fonts/Ubuntu-R.ttf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Ubuntu' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2010,35 +2008,35 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             Ignoring protrusion settings for this character.
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;" at 17.28pt
- -> ë^^C/Windows/Fonts/LinLibertine_Rah.ttf
-Requested font "Linux Libertine/ICU:script=latn;language=DFLT;" at 17.28pt
  -> 
+Requested font "Linux Libertine/ICU:script=latn;language=DFLT;" at 17.28pt
+ -> ^^U^^D/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;+smcp;" at 17.28p
 t
- -> ^^U^^D/Windows/Fonts/LinLibertine_Rah.ttf
+ -> *^^D/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Biolinum/ICU:script=latn;language=DFLT;mapping=tex-text;+
 liga;color=AA0000FF ;" at 10.95pt
- -> *^^D/Windows/Fonts/LinBiolinum_Rah.ttf
+ -> ?^^D/Windows/Fonts/LinBiolinum_Rah.ttf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxBiolinum' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Requested font "Linux Biolinum/ICU:script=latn;language=DFLT;mapping=tex-text;+
 liga;color=AA0000FF ;" at 9.0pt
- -> 1^^D/Windows/Fonts/LinBiolinum_Rah.ttf
+ -> F^^D/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
 +onum;+liga;+smcp;" at 10.95pt
- -> ¤^^E/Windows/Fonts/LinLibertine_Rah.ttf
+ -> Ã^^F/Windows/Fonts/LinLibertine_Rah.ttf
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
-(Font)              scaled to size 7.884pt on input line 206.
+(Font)              scaled to size 7.884pt on input line 191.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 7.88
 4pt
- -> u
+ -> Ú^^D/Windows/Fonts/Ubuntu-R.ttf
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
-(Font)              scaled to size 6.48001pt on input line 206.
+(Font)              scaled to size 6.48001pt on input line 191.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 6.48
 001pt
- -> ^^S^^C/Windows/Fonts/Ubuntu-R.ttf
+ -> x^^G/Windows/Fonts/Ubuntu-R.ttf
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -2046,20 +2044,25 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
- ("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 206.
+Requested font "Linux Libertine/I/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;+onum;+liga;" at 10.95pt
+ -> ^^P^^G/Windows/Fonts/LinLibertine_RIah.ttf
+ [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
+
+("F:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 215.
 Package logreq Info: Writing requests to 'bm-narrative-master.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 33308 strings out of 429025
- 590392 string characters out of 3166798
- 1165788 words of memory out of 3000000
- 36256 multiletter control sequences out of 15000+200000
- 5778 words of font info for 55 fonts, out of 3000000 for 9000
+ 33311 strings out of 429025
+ 590546 string characters out of 3166798
+ 1167788 words of memory out of 3000000
+ 36258 multiletter control sequences out of 15000+200000
+ 5786 words of font info for 56 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
- 60i,11n,48p,10449b,2428s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,48p,10449b,2428s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on bm-narrative-master.pdf (1 page).
+Output written on bm-narrative-master.pdf (2 pages).

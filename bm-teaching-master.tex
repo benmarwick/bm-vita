@@ -40,11 +40,19 @@
 %%%------------------------------------------------------------------------
 
 \documentclass[11pt,article,oneside,oldfontcommands]{memoir}   
+\PassOptionsToPackage{table}{xcolor}
 \usepackage{microtype}
 \usepackage{org-preamble-xelatex} 
 \usepackage{fontawesome,url}
 \usepackage{setspace}
 \usepackage[footinfo]{gitinfo}
+
+% for B&W lines in table
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+% use this to go from CSV to latex: http://truben.no/latex/table/
+
 
 %%%------------------------------------------------------------------------
 %%% Metadata
@@ -125,6 +133,9 @@
 \def\labelitemi{~}
 \renewcommand{\labelitemii}{~}
 
+%% table row shading
+
+
 %%%------------------------------------------------------------------------
 %%% Page layout
 %%%------------------------------------------------------------------------
@@ -138,22 +149,29 @@
 %%%------------------------------------------------------------------------
 %%% Address and contact block
 %%%------------------------------------------------------------------------
-\begin{minipage}[t]{2.95in}
- \flushright {\footnotesize 
- \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}  
-  
-\end{minipage}
-\hfill     
-%\begin{minipage}[t]{0.0in}
-% dummy (needed here)
+%\begin{minipage}[t]{2.95in}
+% \flushright {\footnotesize 
+% \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}  
+%  
 %\end{minipage}
-\hfill
-\begin{minipage}[t]{1.7in}
-  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
-  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
-  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
-  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
-\end{minipage}
+%\hfill     
+%%\begin{minipage}[t]{0.0in}
+%% dummy (needed here)
+%%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{1.7in}
+%  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+%  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
+%  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+%  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+%\end{minipage}
+
+% http://admin.artsci.washington.edu/promotion-and-tenure-documentation
+%a list of all courses taught at the UW, with dates
+%a list of graduate students supervised, with student name, thesis topic, degree, dates, and the faculty member's committee role (chair or member)
+%student assessment of teaching
+%collegial assessment of teaching
+%an analysis of the complete teaching record by the chair and, if possible, a departmental committee
 
 \medskip
 
@@ -164,54 +182,39 @@
 
 \bigskip   
 
+\marginhead{\sffamily {{\vskip 2.5em} courses \newline taught at \newline UW}}
+
 \def\mainfont{Gill Sans MT}
 \font\bodyfont="\mainfont:mapping=tex-text;+onum" at 8bp \let\tenrm\bodyfont
 \font\boldfont="\mainfont/B" at 8bp \let\tenbf\boldfont
 \bodyfont
 
-\baselineskip=10bp
-\smallskipamount=\baselineskip
-\medskipamount=2\baselineskip
-\setbox\strutbox=\hbox{%
-  \vrule height .7\baselineskip depth .3\baselineskip width 0pt}
+\begin{center}
+\rowcolors{1}{white}{light-gray}
+\begin{tabular}{lrrr} 
+   Course code& Course name& Number of students& Offered\\
+  \midrule
+    ARCHY 109    & Archaeology in Film            & 25, 151, 189, 142           & SU08, WI09, SP12, WI14\\ 
+    ARCHY 270    & Field School                         & 10, 10                            & SU10, SU12\\
+    ARCHY 309    & Mainland Southeast Asian Archaeology & 20, 12       & AU09, SP14\\
+    ARCHY 319    & Australian Archaeology      & 16                                  & WI13\\
+    ANTH 399     & Undergraduate Honors Seminar         & 20                  & SP08\\
+    ARCHY 482    & Geoarchaeology                  & 15, 15, 11, 16                 & AU08, WI10, WI12, AU13\\
+    ARCHY 509    & Archaeology and Explanation   & 8, 3                        & SP08, SP13\\
+    \bottomrule
+\end{tabular}
+\end{center}
 
-\newcount\rowcount
+\marginhead{\sffamily {{\vskip 0.3em} graduate \newline students \newline supervised}}
 
-\def\headersfor#1{
-  \noalign{\global\rowcount=0 \medbreak}
-  \bf #1& LVL& LDR& ATT& DEF& INI& SPD& HP& DMG\crcr
-  \noalign{\nobreak\smallskip}}
-
-\def\cr{\crcr\noalign{\maybeskip}}
-
-\def\maybeskip{\ifnum\rowcount=2 \global\rowcount=0 \smallbreak
-  \else \global\advance\rowcount by 1 \fi}
-
-\halign{#\hfil\strut&& \quad\hfil#\crcr
-  \headersfor{Orc}
-  Goblin&                2& 35&  16& 10& 4& 2& 20&  2--4\cr
-  Furious Goblin&  2& 40&  14& 14& 6& 3& 38&  3--8\cr
-  Orc&                    3& 60&  16& 17& 4& 2& 65&  7--10\cr
-  Catapult&            3& 120& 33& 15& 4& 2& 80&  5--9\cr
-  Veteran Orc&      4& 140& 25& 25& 6& 3& 110& 15--20\cr
-  Shaman&            4& 200& 24& 32& 5& 3& 160& 15--18\cr
-  \headersfor{Neutral}
-  Thorn-Hunter&   1& 8&    4&  1& 2& 3& 5&   1--2\cr
-  Thorn-Warrior&  1& 8&    4&  3& 4& 3& 8&   1--3\cr
-  Fire Dragonfly& 1& 9&    3&  1& 5& 3& 6&   1--3\cr
-  Lake Dragonfly& 1& 9&    3&  1& 6& 4& 6&   1--3\cr
-  Devilfish&      1& 12&   6&  4& 6& 3& 10&  1--3\cr
-  Venomous Spider&1& 12&   5&  1& 4& 3& 10&  2--3\cr
-  Cave Spider&    1& 14&   4&  4& 2& 3& 14&  2--4\cr
-  Hyena&          2& 20&   8&  8& 4& 3& 14&  3--4\cr
-  Pirate&         2& 25&   8&  4& 4& 3& 20&  3--5\cr
-  Swamp Snake&    2& 28&  12&  8& 4& 2& 25&  3--5\cr
-  Fire Spider&    2& 30&  12& 12& 6& 3& 27&  4--5\cr
-  Snake&          2& 30&  14&  8& 5& 2& 28&  3--6\cr
-  % ...
-}
+don't forget off-campus ones!
 
 
+\marginhead{\sffamily {{\vskip 0.3em} student\newline assessment \newline of teaching}}
+
+
+
+\marginhead{\sffamily {{\vskip 0.3em} collegial \newline assessment \newline of teaching}}
 
 
 \end{document}

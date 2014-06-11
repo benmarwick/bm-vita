@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  9 JUN 2014 10:15
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  9 JUN 2014 10:18
 entering extended mode
 **bm-biblio-master.tex
 ("E:\My Documents\My UW\Benefits\Tenure\bm-biblio\bm-biblio-master.tex"
@@ -1566,30 +1566,30 @@ AA0000FF
 . ;"
 .................................................
 Requested font "Ubuntu" at 10.95pt
- -> ?^^D/Windows/Fonts/Ubuntu-R.ttf
+ -> 5^^D/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> v^^D/Windows/Fonts/Ubuntu-R.ttf
+ -> l^^D/Windows/Fonts/Ubuntu-R.ttf
 \g_fontspec_family_Ubuntu_int=\count399
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ^^80^^D/Windows/Fonts/Ubuntu-R.ttf
+ -> v^^D/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
- -> ^^85^^D/Windows/Fonts/Ubuntu-R.ttf
+ -> {^^D/Windows/Fonts/Ubuntu-R.ttf
+Requested font "Ubuntu/B/ICU" at 10.95pt
+ -> ^^80^^D/Windows/Fonts/Ubuntu-B.ttf
 Requested font "Ubuntu/B/ICU" at 10.95pt
  -> ^^8a^^D/Windows/Fonts/Ubuntu-B.ttf
-Requested font "Ubuntu/B/ICU" at 10.95pt
- -> ^^94^^D/Windows/Fonts/Ubuntu-B.ttf
+Requested font "Ubuntu/ICU" at 10.95pt
+ -> ^^8f^^D/Windows/Fonts/Ubuntu-R.ttf
+Requested font "Ubuntu/I/ICU" at 10.95pt
+ -> ^^94^^D/Windows/Fonts/Ubuntu-RI.ttf
+Requested font "Ubuntu/I/ICU" at 10.95pt
+ -> ^^99^^D/Windows/Fonts/Ubuntu-RI.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
  -> ^^99^^D/Windows/Fonts/Ubuntu-R.ttf
-Requested font "Ubuntu/I/ICU" at 10.95pt
- -> ^^9e^^D/Windows/Fonts/Ubuntu-RI.ttf
-Requested font "Ubuntu/I/ICU" at 10.95pt
- -> £^^D/Windows/Fonts/Ubuntu-RI.ttf
-Requested font "Ubuntu/ICU" at 10.95pt
- -> £^^D/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> ¨^^D/Windows/Fonts/Ubuntu-BI.ttf
+ -> ^^9e^^D/Windows/Fonts/Ubuntu-BI.ttf
 Requested font "Ubuntu/BI/ICU" at 10.95pt
- -> ­^^D/Windows/Fonts/Ubuntu-BI.ttf
+ -> £^^D/Windows/Fonts/Ubuntu-BI.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1829,7 +1829,7 @@ LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 5.76001pt on input line 155.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 5.76
 001pt
- -> ´^^L/Windows/Fonts/Ubuntu-R.ttf
+ -> ª^^L/Windows/Fonts/Ubuntu-R.ttf
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Ubuntu' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2033,12 +2033,12 @@ LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 7.884pt on input line 199.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 7.88
 4pt
- -> :^^I/Windows/Fonts/Ubuntu-R.ttf
+ -> 0^^I/Windows/Fonts/Ubuntu-R.ttf
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 (Font)              scaled to size 6.48001pt on input line 199.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 6.48
 001pt
- -> Ø^^K/Windows/Fonts/Ubuntu-R.ttf
+ -> Î^^K/Windows/Fonts/Ubuntu-R.ttf
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 

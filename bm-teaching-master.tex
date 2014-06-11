@@ -47,11 +47,22 @@
 \usepackage{setspace}
 \usepackage[footinfo]{gitinfo}
 
-% for B&W lines in table
+
+
+% for  tables
 \usepackage{booktabs}
+\usepackage{longtable}
 \usepackage[table]{xcolor}
 \definecolor{light-gray}{gray}{0.95}
+\usepackage{footnote}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 % use this to go from CSV to latex: http://truben.no/latex/table/
+
+
 
 
 %%%------------------------------------------------------------------------
@@ -88,6 +99,7 @@
 %%%------------------------------------------------------------------------
 
 \begin{document}
+
 
 %% Choose fonts for use with xelatex
 %% Using free fonts with big glyph sets for maximum flexibility  
@@ -199,22 +211,143 @@
     ARCHY 309    & Mainland Southeast Asian Archaeology & 20, 12       & AU09, SP14\\
     ARCHY 319    & Australian Archaeology      & 16                                  & WI13\\
     ANTH 399     & Undergraduate Honors Seminar         & 20                  & SP08\\
-    ARCHY 482    & Geoarchaeology                  & 15, 15, 11, 16                 & AU08, WI10, WI12, AU13\\
+    ARCHY 482/6    & Geoarchaeology                  & 15, 15, 11, 16                 & AU08, WI10, WI12, AU13\\
     ARCHY 509    & Archaeology and Explanation   & 8, 3                        & SP08, SP13\\
     \bottomrule
 \end{tabular}
 \end{center}
 
-\marginhead{\sffamily {{\vskip 0.3em} graduate \newline students \newline supervised}}
+\medskip 
 
-don't forget off-campus ones!
+\marginhead{\sffamily {{\vskip 1.75em} graduate \newline students \newline supervised}}
+
+\begin{Spacing}{0.7}
+
+\def\mainfont{Gill Sans MT}
+\font\bodyfont="\mainfont:mapping=tex-text;+onum" at8bp \let\tenrm\bodyfont
+\font\boldfont="\mainfont/B" at 8bp \let\tenbf\boldfont
+\bodyfont
+
+\begin{center}
+\rowcolors{1}{white}{light-gray}
+\def\arraystretch{1}% 
+    \begin{longtable}{ l L{6cm} p{2cm}  p{2cm} }
+     Name   & Thesis title  & Status     & Role    \\ 
+   \midrule
+     \endhead 
+    
+     Li Ying Wang           & TBD                                                                                                                                                          & pre-MA             & Adviser                        \\
+    Rosemary Brown          & TBD                                                                                                                                                          & pre-MA             & Adviser                        \\
+    Zach Ploskey            & Cosmogenic nuclide exposure dating of ice retreat from around the Puget Sound and the San Juan Islands                                                       & MA                 & Graduate school representative \\
+    Molly Odell             & The use of shellfish to buffer seasonal and long-term resource fluctuations in the Kodiak Archipelago                                                        & MA                 & Committee member               \\
+    Natasha Slobodina       & Explaining the Use of Ground Slate in Northwest Alaska: Decreased Residential Mobility and Raw Material Use                                                  & MA                 & Committee member               \\
+    Cyler Conrad (UNM)      & Zooarchaeology in Thailand during the middle and late Holocene   & MA                 & External committee member      \\
+    Will Brown              & Archaeological paleodemography, diet and parasitology through the  archaeological record of Kodiak, Alaska                                                   & PhC 2014           & Committee member               \\
+    Seungki Kwak            & The hunting farmers: Long-term chronology of subsistence and the role of intensive rice agriculture in the central part of the  prehistoric Korean peninsula & PhC 2013           & Chair                          \\
+    Kayla Wopschall         & Pygmy Hippo extinctions on Cyprus                                                                                                                            & PhC 2013           & Co-chair                       \\
+    Mark Madsen             & Improving Regional-Scale Cultural Transmission Modeling by Building Seriation and Classification Into Neutral Models                                         & PhC 2012           & Chair                          \\
+    Jenn Huff               & Stone artefacts, risk and adaptation during the Holocene in Papua New Guinea                                                                                 & PhC 2011           & Chair, committee member        \\
+    Emily Peterson          & Insularity and Adaptation: Investigating the Role of Exchange and Inter-island Interaction in the Southwest Pacific                                          & PhC 2009           & Committee member               \\
+    Amy Jordan              & The Price of Spice: The Archaeology of Ethnogenesis in the Colonial Period Banda Islands, Indonesia                                                          & PhC 2009           & Committee member               \\
+    Erik Gjesfeld           & Of Pots and People: Investigating Hunter-Gatherer Pottery Production and Social Networks in the Kuril Islands                                                & Graduated PhD 2014 & Committee member               \\
+    Hannah Van Vlack (SJSU) & Forager Subsistence Regimes in the Thai-Malay Peninsula: An Environmental Archaeological Case Study of Khao Toh Chong Rockshelter, Krabi, Thailand           & Graduated MA 2013  & External committee member      \\
+    Chung-Ching Shiung      & The Implications of Social, Cultural, Economic, and Political Interactions for Ceramic Evolution on the Banda Islands, Maluku Province, Indonesia            & Graduated PhD 2011 & Committee member              \\
+    Colby Philips           & Networked Glass: Social Networks and Lithic Raw Material Procurement in the Kuril Islands of the Russian Far East                                            & Graduated PhD 2010 & Committee member               \\
+    Chris Lockwood          & Pigs, Dryland Agriculture and Social Complexity in Precontact Hawai'i: Assessing Surplus Production through Landscape Geochemistry                           & Graduated PhD 2009 & Committee member               \\
+        \bottomrule
+    \end{longtable}
+\end{center}
+\end{Spacing}
+
+\smallskip 
+
+\marginhead{\sffamily {{\vskip 2.75em} student\newline assessment \newline of teaching}}
+
+\begin{center}
+
+\begin{minipage*}{15cm} % for the footnote
+
+\begin{Spacing}{0.7}
+
+\def\mainfont{Gill Sans MT}
+\font\bodyfont="\mainfont:mapping=tex-text;+onum" at8bp \let\tenrm\bodyfont
+\font\boldfont="\mainfont/B" at 8bp \let\tenbf\boldfont
+\bodyfont
 
 
-\marginhead{\sffamily {{\vskip 0.3em} student\newline assessment \newline of teaching}}
+
+\rowcolors{1}{white}{light-gray}
+\def\arraystretch{1}% 
+    \begin{tabular}{ p{0.5cm} p{0.5cm} L{1.5cm} L{4cm} R{1.5cm}  R{1cm}  R{1cm}  R{1cm}  }
+  
+    Year & 
+    Term & 
+    Course code & 
+    Course name   & 
+    Respondents (n) & 
+    Median (0-5)\footnote{Median of four items: `the course as a whole', `course content', `instructor overall', `instructor's contribution to your understand of concepts'} & 
+        Adj. \newline Median (0-5)\footnote{A  regression-based adjustment applied campus-wide by the \href{http://www.washington.edu/oea/services/course_eval/uw_seattle/adjusted_medians.html}{UW Office of Educational Assessment} to remove the effect of a relationship between lenient grades and high ratings.} &
+    C\&I Index\footnote{\href{http://www.washington.edu/oea/services/course_eval/cei.html}{Challenge and Engagement Index}, decile rank until SP10, then 1-7}    \\ 
+            \midrule
+    2008  & SU   & ARCHY 101   & Introduction to Archaeology \newline (Archaeology in Film)                      & 11              & 4.6          & 4.5                   & 3                                                                 \\
+    2008  & SP   & ANTH 399    & Junior Honors                                                          & 19              & 4.7          & 4.3                   & 8                                                                 \\
+    2008  & AU   & ARCHY 482   & Geoarchaeology                                                         & 14              & 4.6          & 4.6                   & 9                                                                 \\
+    2009  & WI   & ARCHY 101   & Introduction to Archaeology \newline (Archaeology in Film)                     & 83              & 4.5          & 4.5                   & 2                                                                 \\
+    2009  & SP   & ARCHY 570   &  Seminar in Archaeological Theory \newline  (Archaeology and Explanation)        & 7               & 4.5          & 4.2                   & 9                                                                 \\
+    2009  & AU   & ARCHY 369   & Special Topics in Archaeology \newline (Archaeology of Mainland Southeast Asia) & 14              & 4.3          & 4.1                   & 7                                                                 \\
+    2010  & WI   & ARCHY 482   & Geoarchaeology                                                         & 13              & 4.6          & 4.7                   & 6                                                                 \\
+    2010  & SU   & ARCHY 270   & Field School                                                           & 10              & 4.0            & NA                    & NA                                                                \\
+    2012  & WI   & ARCHY 482   & Geoarchaeology                                                         & 11              & 4.2          & 4.3                   & 5.9                                                               \\
+    2012  & SP   & ARCHY 109   & Archaeology in Film                                                    & 108             & 4.4          & 4.3                   & 3.9                                                               \\
+    2013  & WI   & ARCHY 319   & Australian Archaeology                                                 & 16              & 4.4          & 4.2                   & 4.8                                                               \\
+    2013  & SP   & ARCHY 509   & Archaeology and Explanation                                            & 3               & 4.0            & 3.9                   & 5.5                                                               \\
+    2013  & AU   & ARCHY 482   & Geoarchaeology Seminar                                                 & 13              & 4.7          & 4.5                   & 5.7                                                               \\
+    2013  & AU   & ARCHY 486   & Geoarchaeology Lab                                                     & 12              & 4.3          & 4.3                   & 5.8                                                               \\
+    2014  & WI   & ARCHY 109   & Archaeology in Film                                                    & 70              & 4.4          & 4.1                   & 4.1                                                               \\
+      \bottomrule
+    \end{tabular}
+
+\end{Spacing}
+\end{minipage*}
+
+\end{center}
 
 
+\newpage
 
-\marginhead{\sffamily {{\vskip 0.3em} collegial \newline assessment \newline of teaching}}
+\marginhead{\sffamily {{\vskip 0.75em} collegial \newline assessment \newline of teaching}}
+
+
+\begin{center}
+
+\begin{minipage*}{15cm} % for the footnote
+
+\begin{Spacing}{0.7}
+
+\def\mainfont{Gill Sans MT}
+\font\bodyfont="\mainfont:mapping=tex-text;+onum" at8bp \let\tenrm\bodyfont
+\font\boldfont="\mainfont/B" at 8bp \let\tenbf\boldfont
+\bodyfont
+
+\rowcolors{1}{white}{light-gray}
+\def\arraystretch{1}% 
+    \begin{tabular}{ p{3cm} p{5cm} L{1cm} L{1cm}   }
+    
+   Evaluator  &  Course evaluated  &  Term  &  Year \\
+ \midrule
+Dr Marcos Llobera & ARCHY 101 Introduction to Archaeology (Archaeology in Film)  &  WI  &  2009   \\
+Dr Jason De Leon  &  ARCHY 101 Introduction to Archaeology (Archaeology in Film)  &  SP  &  2010   \\
+Dr Don Grayson  &  ARCHY 482 Geoarchaeology  &  WI  &  2012   \\
+Dr Ben Fitzhugh  &  ARCHY 319 Australian Archaeology  &  WI  &  2013   \\
+Dr Sara Gonzalez  &  ARCHY 109 Archaeology in Film  &  WI  &  2014   \\
+ \bottomrule
+    \end{tabular}
+
+\end{Spacing}
+\end{minipage*}
+
+\end{center}
+
 
 
 \end{document}

@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>bm-vita-master.bcf</file>
+      <file>_region_.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>bm-vita-master.bbl</file>
+      <file>_region_.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -55,30 +55,29 @@
       <file>biblatex.def</file>
       <file>chicago-authordate.bbx</file>
       <file>chicago-authordate.cbx</file>
-      <file>chicago-dates-common.cbx</file>
       <file>biblatex.cfg</file>
       <file>cms-american.lbx</file>
       <file>american.lbx</file>
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>bm-vita-master</infile>
+      <infile>_region_</infile>
     </cmdline>
     <input>
-      <file>bm-vita-master.bcf</file>
+      <file>_region_.bcf</file>
     </input>
     <output>
-      <file>bm-vita-master.bbl</file>
+      <file>_region_.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>bm-vita-master.bbl</file>
+      <file>_region_.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>bm-vita-master.bcf</file>
+      <file>_region_.bcf</file>
     </requires>
     <requires type="editable">
       <file>/Users/kjhealy/Documents/bibs/socbib.bib</file>

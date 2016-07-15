@@ -1,18 +1,15 @@
-%%% A template to produce a nice-looking Curriculum Vitae.
+\message{ !name(bm-vita-master.tex)}%%% A template to produce a nice-looking Curriculum Vitae.
 %%% Originally from Kieran Healy <kjhealy@gmail.com>
 %%% Kieran's source is at http://kjhealy.github.com/kjh-vita
 %%%
-%%% This source code has been adapted by
+%%% This source code has been adapted by 
 %%% Ben Marwick <benmarwick@gmail.com> and is largely
 %%% determined by the instructions here:
 %%% https://admin.artsci.washington.edu/promotion-and-tenure-documentation#curriculum
 %%%
-%%% How to use:
-%%% edit in a text editor
-%%% run xelatex bm-vita-master.tex to make the PDF
-%%% view PDF in a browser
+%%% questions: where to put on campus presentation on scholarly and teaching topics?
 %%% ------------------------------------------------------------------------
-%%% Requirements for this document that are included
+%%% Requirements for this docuemnt that are included
 %%%  in (or otherwise easily obtained) a modern tex distribution:
 %%% ------------------------------------------------------------------------
 %%% xelatex (I'm using MiKTeX & Texmaker)
@@ -25,33 +22,30 @@
 %%% memoir.cls
 %%% fontawesome.sty
 %%% gitinfo.sty
-%%%
-%%%
+%%% 
+%%% 
 %%% ------------------------------------------------------------------------
 %%% Requirements from https://github.com/kjhealy/latex-custom-kjh
 %%% ------------------------------------------------------------------------
 %%% org-preamble-xelatex.sty
 %%% memoir-article-styles.sty
 %%%
-%%%
+%%% 
 %%% ------------------------------------------------------------------------
 %%% Note
 %%%------------------------------------------------------------------------
-%%% Because this is a hand-tweaked file, be on the look out for \medksip,
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
 %%% \bigskip and \newpage commands here and there, which are used to balance
-%%% the layout or avoid widows & orphans, etc. You should of course add or
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
-\documentclass[11pt,article,oneside]{memoir}
+\documentclass[11pt,article,oneside]{memoir}   
 \usepackage{microtype}
-\usepackage{org-preamble-xelatex}
-\newfontfamily\fontawesome[Extension=.otf]{FontAwesome}
-\usepackage{fontawesome}
-\usepackage{url}
+\usepackage{org-preamble-xelatex} 
+\usepackage{fontawesome,url}
 \usepackage{setspace}
 \usepackage[footinfo]{gitinfo}
-
 
 % get gitinfo setup file from http://www.ctan.org/tex-archive/macros/latex/contrib/gitinfo
 % and follow instructions in manual before first commit
@@ -88,7 +82,6 @@
 \def\myemail{bmarwick@uow.edu.au}
 \def\myphone{(02) 4221 5455}
 \def\mytwitter{@benmarwick}
-\def\myweb{http://smah.uow.edu.au/sees/contacts/UOW206890.html}
 
 
 \def\myversion{}
@@ -109,22 +102,25 @@
 %%%------------------------------------------------------------------------
 \begin{document}
 
+\message{ !name(bm-vita-master.tex) !offset(-3) }
+
+
 %% Choose fonts for use with xelatex
-%% Using free fonts with big glyph sets for maximum flexibility
+%% Using free fonts with big glyph sets for maximum flexibility  
 %% http://www.linuxlibertine.org/index.php?id=2&L=1
 %% http://font.ubuntu.com/
 
-\setromanfont[Mapping={tex-text},
+\setromanfont[Mapping={tex-text}, 
 	Numbers={OldStyle},
 	Ligatures={Common}]{Linux Libertine}
 \setsansfont[Mapping=tex-text,
-	Ligatures={Common},
+	Ligatures={Common}, 
 	Colour=AA0000]{Linux Biolinum}
-\setmonofont[Mapping=tex-text,Scale=0.72]{Ubuntu}
+\setmonofont[Mapping=tex-text,Scale=0.72]{Ubuntu} 
 
 \newfontface\scheader[SmallCapsFont={Linux Libertine},SmallCapsFeatures={Letters=SmallCaps}]{Linux Libertine}
 
-\newfontface\addressblock[Mapping={tex-text},
+\newfontface\addressblock[Mapping={tex-text}, 
 	Numbers={OldStyle},
 	Ligatures={Common}]{Linux Libertine}
 
@@ -135,8 +131,8 @@
 
 %% Marginal header
 %% Note: as the document goes on you may need to introduce a (gradually increasing)
-%% \vspace element to keep the marginal header pleasingly aligned with the first
-%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
 %% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
 \newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
 
@@ -145,7 +141,7 @@
 \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Linux Libertine}\selectfont\&\,}}
 
 %% No bullets on labels
-\renewcommand{\labelitemi}{~}
+\renewcommand{\labelitemi}{~} 
 
 %% Custom hanging indent for vita items
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -168,31 +164,32 @@
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
  \flushright {\footnotesize
-%%%%%%%%  UW details
- % \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}
+%%%%%%%%  UW details 
+ % \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100} 
 
-%%%%%%%%  UOW details
- \href{http://cas.uow.edu.au/index.html/}{Centre for Archaeological Science}\\ University of Wollongong  \\ \vspace{-0.05in} New South Wales \textsc{wa} 2500}
+%%%%%%%%  UOW details  
+ \href{http://cas.uow.edu.au/index.html/}{Centre for Archaeological Science}\\ University of Wollongong  \\ \vspace{-0.05in} New South Wales \textsc{wa} 2500}  
 
 \end{minipage}
-\hfill
+\hfill     
 %\begin{minipage}[t]{0.0in}
 % dummy (needed here)
 %\end{minipage}
 \hfill
 \begin{minipage}[t]{1.7in}
-  \flushright \footnotesize  \addressblock \myphone \, {\fontawesome\char"F095} \\
-  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, {\fontawesome\char"F099}  }\\
-  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, {\fontawesome\char"F003}} \\
-  %%{\scriptsize  \texttt{\href{\myweb}{\myweb}} \, {\fontawesome\char"F0AC}}
+  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
 \end{minipage}
+
 \medskip
 
-%% Name
+%% Name 
 \noindent{\LARGE\scheader \textsc{ben marwick}}
 \reversemarginpar
 
-\bigskip
+\bigskip       
 
 %% Rearrange these sections according to requirements... for tenure it's got to be like this:
 %
@@ -208,7 +205,7 @@
 
 \bigskip
 
-%% \input{bm-vita-sub-phdtitle.tex}
+\input{bm-vita-sub-phdtitle.tex}
 
 \bigskip
 
@@ -216,7 +213,6 @@
 
 \bigskip
 
-%% This is for UW P&T
 %% \input{bm-vita-sub-uwcommittees.tex}
 
 \bigskip
@@ -239,8 +235,14 @@
 \end{document}
 
 
-%%% Local Variables:
+%%% Local Variables: 
 %%% coding: utf-8
 %%% mode: latex
 %%% TeX-engine: xetex
-%%% End:
+%%% End: 
+
+
+
+
+
+\message{ !name(bm-vita-master.tex) !offset(-248) }

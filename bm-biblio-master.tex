@@ -2,14 +2,14 @@
 %%% Originally from Kieran Healy <kjhealy@gmail.com>
 %%% Kieran's source is at http://kjhealy.github.com/kjh-vita
 %%%
-%%% This source code has been adapted by 
+%%% This source code has been adapted by
 %%% Ben Marwick <benmarwick@gmail.com> and is largely
 %%% determined by the instructions here:
 %%% https://admin.artsci.washington.edu/promotion-and-tenure-documentation#curriculum
 %%%
-%%% questions: where to put on campus presentation on scholarly and teaching topics?
+
 %%% ------------------------------------------------------------------------
-%%% Requirements for this docuemnt that are included
+%%% Requirements for this document that are included
 %%%  in (or otherwise easily obtained) a modern tex distribution:
 %%% ------------------------------------------------------------------------
 %%% xelatex (I'm using MiKTeX & Texmaker)
@@ -22,30 +22,32 @@
 %%% memoir.cls
 %%% fontawesome.sty
 %%% gitinfo.sty
-%%% 
-%%% 
+%%%
+%%%
 %%% ------------------------------------------------------------------------
 %%% Requirements from https://github.com/kjhealy/latex-custom-kjh
 %%% ------------------------------------------------------------------------
 %%% org-preamble-xelatex.sty
 %%% memoir-article-styles.sty
 %%%
-%%% 
+%%%
 %%% ------------------------------------------------------------------------
 %%% Note
 %%%------------------------------------------------------------------------
-%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% Because this is a hand-tweaked file, be on the look out for \medksip,
 %%% \bigskip and \newpage commands here and there, which are used to balance
-%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% the layout or avoid widows & orphans, etc. You should of course add or
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
-\documentclass[11pt,article,oneside]{memoir}   
+\documentclass[11pt,article,oneside]{memoir}
 \usepackage{microtype}
-\usepackage{org-preamble-xelatex} 
+\usepackage{org-preamble-xelatex}
+\newfontfamily\fontawesome[Extension=.otf]{FontAwesome}
 \usepackage{fontawesome,url}
 \usepackage{setspace}
 \usepackage[footinfo]{gitinfo}
+\usepackage{xeCJK} %% for the Japanese characters
 
 
 
@@ -61,21 +63,38 @@
 \def\mybibliostyle{plain}
 \def\mybibliocommand{}
 \def\mysubtitle{}
-\def\myaffiliation{University of Washington}
-\def\myaddress{Anthropology Department}
-\def\myemail{bmarwick@uw.edu}
-\def\myweb{http://faculty.washington.edu/bmarwick/ }
-\def\myphone{(206) 552-9450}
-\def\myfax{(206) 543-3285}
+%%%%%%%%  UW details
+% \def\myaffiliation{University of Washington}
+% \def\myaddress{Anthropology Department}
+% \def\myemail{bmarwick@uw.edu}
+% \def\myweb{http://faculty.washington.edu/bmarwick/ }
+% \def\myphone{(206) 552-9450}
+% \def\myfax{(206) 543-3285}
+% \def\mytwitter{@benmarwick}
+% \def\myversion{}
+% \def\myrevision{}
+
+%%%%%%%%  UOW details
+\def\myaffiliation{University of Wollongong}
+\def\myaddress{School of Earth and Environmental Sciences}
+\def\myemail{bmarwick@uow.edu.au}
+\def\myphone{(02) 4221 5455}
 \def\mytwitter{@benmarwick}
+
+
 \def\myversion{}
 \def\myrevision{}
 
 
-\def\myaffiliation{University of Washington}
+%%%%%%%%  UW details
+% \def\myaffiliation{University of Washington}
+%%%%%%%%  UOW details
+\def\myaffiliation{University of Wollongong}
 \def\myauthor{Ben Marwick}
 \date{} % not used (revision control instead)
 \def\mykeywords{}
+
+
 
 
 %%%------------------------------------------------------------------------
@@ -84,21 +103,21 @@
 \begin{document}
 
 %% Choose fonts for use with xelatex
-%% Using free fonts with big glyph sets for maximum flexibility  
+%% Using free fonts with big glyph sets for maximum flexibility
 %% http://www.linuxlibertine.org/index.php?id=2&L=1
 %% http://font.ubuntu.com/
 
-\setromanfont[Mapping={tex-text}, 
+\setromanfont[Mapping={tex-text},
 	Numbers={OldStyle},
 	Ligatures={Common}]{Linux Libertine}
 \setsansfont[Mapping=tex-text,
-	Ligatures={Common}, 
+	Ligatures={Common},
 	Colour=AA0000]{Linux Biolinum}
-\setmonofont[Mapping=tex-text,Scale=0.72]{Ubuntu} 
+\setmonofont[Mapping=tex-text,Scale=0.72]{Ubuntu}
 
 \newfontface\scheader[SmallCapsFont={Linux Libertine},SmallCapsFeatures={Letters=SmallCaps}]{Linux Libertine}
 
-\newfontface\addressblock[Mapping={tex-text}, 
+\newfontface\addressblock[Mapping={tex-text},
 	Numbers={OldStyle},
 	Ligatures={Common}]{Linux Libertine}
 
@@ -109,8 +128,8 @@
 
 %% Marginal header
 %% Note: as the document goes on you may need to introduce a (gradually increasing)
-%% \vspace element to keep the marginal header pleasingly aligned with the first 
-%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \vspace element to keep the marginal header pleasingly aligned with the first
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or
 %% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
 \newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
 
@@ -119,7 +138,7 @@
 \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Linux Libertine}\selectfont\&\,}}
 
 %% No bullets on labels
-\renewcommand{\labelitemi}{~} 
+\renewcommand{\labelitemi}{~}
 
 %% Custom hanging indent for vita items
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -141,29 +160,33 @@
 %%% Address and contact block
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
- \flushright {\footnotesize 
- \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}  
-  
+ \flushright {\footnotesize
+%%%%%%%%  UW details
+ % \href{http://depts.washington.edu/anthweb/}{Department of Anthropology} \\ Box 353100 \\ University of Washington  \\ \vspace{-0.05in} Seattle \textsc{wa} 98195-3100}
+
+%%%%%%%%  UOW details
+ \href{http://cas.uow.edu.au/index.html/}{Centre for Archaeological Science}\\ University of Wollongong  \\ \vspace{-0.05in} \textsc{NSW} 2500}
+
 \end{minipage}
-\hfill     
+\hfill
 %\begin{minipage}[t]{0.0in}
 % dummy (needed here)
 %\end{minipage}
 \hfill
 \begin{minipage}[t]{1.7in}
-  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
-  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, \faTwitter }  \\ 
-  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
-  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+  \flushright \footnotesize  \addressblock \myphone \, {\fontawesome\char"F095} \\
+  {\scriptsize  \texttt{\href{http://twitter.com/benmarwick}{\mytwitter}} \, {\fontawesome\char"F099}  }\\
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, {\fontawesome\char"F003}} \\
+  %%{\scriptsize  \texttt{\href{\myweb}{\myweb}} \, {\fontawesome\char"F0AC}}
 \end{minipage}
 
 \medskip
 
-%% Name 
+%% Name
 \noindent{\LARGE\scheader \textsc{bibliography}}
 \reversemarginpar
 
-\bigskip       
+\bigskip
 
 % Bibliography: https://admin.artsci.washington.edu/promotion-and-tenure-documentation#curriculum
 
@@ -175,6 +198,32 @@
 % a labeling of nonpublished material as "in press" or "accepted for publication," "submitted," or "work in progress" (note that "forthcoming" is ambiguous and should not be used)
 
 \marginhead{\sffamily {{\vskip -0.35em} peer reviewed \newline journal articles}}
+
+\ind  Clarkson, C., Jacobs, Z. \textbf{Marwick, B.}, and 19  others 2017 {Human occupation of northern Australia by 65,000 years ago \textit{Nature}  in press, to appear 20 July 2017.
+
+\ind  \textbf{Marwick, B.}, P. Hiscock, M. Sullivan, P. Hughes 2017 {\href{http://dx.doi.org/10.1016/j.jasrep.2017.07.004}{Landform boundary effects on Holocene forager landscape use in arid South Australia} \textit{Journal of Archaeological Science: Reports}  in press
+
+\ind  \textbf{Marwick, B.}, E. Hayes, C. Clarkson, R. Fullagar 2017 {\href{https://doi.org/10.1016/j.jas.2017.01.008}{Movement of lithics by trampling: An experiment in the Madjedbebe sediments, northern Australia} \textit{Journal of Archaeological Science}  79: 73–85
+
+\ind \textbf{Marwick, B.} 2017 {\href{http://dx.doi.org/10.1007/s10816-015-9272-9}{Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation}. \textit{Journal of Archaeological Method and Theory} 24: 424. DOI: dx.doi.org/10.1007/s10816-015-9272-9.
+
+\ind  Bulbeck, D., Aziz, F. A.,  O'Connor, S.,  Calo, A., Fenner, J. N., \textbf{Marwick, B.},  Feathers, J.,  Wood, R. \& Prastiningtyas, D. 2016. \href{http://dx.doi.org/10.1353/asi.2016.0017}{"Mortuary Caves and the Dammar Trade in the Towuti–Routa Region, Sulawesi, in an Island Southeast Asian Context."} \textit{Asian Perspectives} 55(2): 148-183.
+
+\ind  \textbf{Marwick, B.}, Hannah Van Vlack; Cyler Conrad; Rasmi Shoocongdej; Cholawit Thongcharoenchaikit; Seungki Kwak 2016 {\href{http://dx.doi.org/10.1016/j.jas.2016.10.010}{Adaptations to sea level change and transitions to agriculture at Khao Toh Chong rockshelter, Peninsula Thailand} \textit{Journal of Archaeological Science} 77: 94–108
+
+\ind  \textbf{Marwick, B.}, Chris Clarkson; Sue O'Connor; Sophie Collins 2016 {\href{http://dx.doi.org/10.1016/j.jhevol.2016.09.004}{Early Modern Human Lithic Technology from Jerimalai, East Timo}r. \textit{Journal of Human Evolution} 101: 45–64
+
+\ind Steele, Teresa E., Alex Mackay, Kathryn E. Fitzsimmons,  \textbf{B. Marwick}, Jayson Orton, Steve Schwortz, Mareike C. Stahlschmidt 2016. Varsche Rivier 003:  {\href{http://www.paleoanthro.org/media/journal/content/PA20160100.pdf}{fA Middle Stone Age site with Still Bay and Howiesons Poort assemblages in southern Namaqualand, South Africa} \textit{PaleoAnthropology} 2016: 100−163.
+
+\ind Conrad, C., Higham, C., Eda, M. and \textbf{B. Marwick} 2016 \href{https://doi.org/10.1353/asi.2016.0013}{Paleoecology and Forager Subsistence Strategies During the Pleistocene-Holocene Transition: A Reinvestigation of the Zooarchaeological Assemblage from Spirit Cave, Mae Hong Son Province, Thailand}. \textit{Asian Perspectives} 55(1): 2-27.
+
+\ind Tin Htut Aung, \textbf{B. Marwick}, C. Conrad 2015 \href{https://journals.lib.washington.edu/index.php/JIPA/article/view/14896}{Palaeolithic Zooarchaeology in Myanmar: A Review and Future Prospect} \textit{Journal of Indo-Pacific Archaeology} 39 DOI: 10.7152/jipa.v39i0.14896
+
+\ind Kwak, S. and \textbf{B. Marwick} 2015 \href{http://journals.lib.washington.edu/index.php/JIPA/article/view/14708}{What did they cook? A preliminary investigation into culinary practices and pottery use in the central part of the Korean peninsula during the mid to late Holocene} \textit{Journal of Indo-Pacific Archaeology} 37  DOI: 10.7152/jipa.v37i0.14708
+
+\ind Clarkson, C., Mike Smith, \textbf{B. Marwick}, Richard Fullagar, Lynley A. Wallis, Patrick Faulkner, Tiina Manne, Elspeth Hayes, Richard G. Roberts, Zenobia Jacobs, Xavier Carah, Kelsey M. Lowe, Jacqueline Matthews, S. Anna Florin 2015 \href{http://www.sciencedirect.com/science/article/pii/S0047248415000846}{The archaeology, chronology and stratigraphy of Madjedbebe (Malakunanja II): A site in northern Australia with early occupation} \textit{Journal of Human Evolution} 83: 46–64 DOI: 10.1016/j.jhevol.2015.03.014
+
+\ind Lowe, K., Wallis, L., Pardoe, C., \textbf{Marwick, B}., Clarkson, C., Manne, T., Smith, M. and R. Fullagar 2014 \href{http://faculty.washington.edu/bmarwick/PDFs/Lowe_et_al_2014_MJB_GPR.pdf}{Ground-penetrating radar and burial practices in western Arnhem Land}, Australia. \textit{Archaeology in Oceania} 49:148-157. DOI: 10.1002/arco.5039
 
 \ind Mackay, A, T. Sumner, Z. Jacobs; \textbf{B. Marwick}, K. Bluff, M. Shaw. in press 2014.  \href{http://faculty.washington.edu/bmarwick/PDFs/Mackay_et_al_2014.pdf}{Putslaagte 1 (PL1), the Doring River, and the later Middle Stone Age in southern Africa's Winter Rainfall Zone}. \textit{Quaternary International} \newline DOI: 10.1016/j.quaint.2014.05.007
 
@@ -202,7 +251,7 @@
 
 \ind \textbf{Marwick, B.} 2008c. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2008_BIPPA.pdf}{Beyond typologies: The reduction thesis and its implications for lithic assemblages in Southeast Asia.} \textit{Bulletin of the Indo-Pacific Prehistory Association} 28: 108-116
 
-\ind \textbf{Marwick, B.} 2008d. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2008_JAS.pdf}{Identifying variation in Hoabinhian lithic technology: An index of flake cortex distribution for the measurement of cobble reduction intensity.} \textit{ Journal of Archaeological Science} 35(5): 1189-1200. 
+\ind \textbf{Marwick, B.} 2008d. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2008_JAS.pdf}{Identifying variation in Hoabinhian lithic technology: An index of flake cortex distribution for the measurement of cobble reduction intensity.} \textit{ Journal of Archaeological Science} 35(5): 1189-1200.
 
 \ind \textbf{Marwick, B.} 2007. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2007_SIJ.pdf}{Approaches to Stone Artefact Archaeology in Thailand: A Historical Review.} \textit{Silpakorn University International Journal} 7:49-88
 
@@ -210,7 +259,7 @@
 
 \ind \textbf{Marwick, B.} 2005b. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2005_JAS.pdf}{Element Concentrations and Magnetic Susceptibility of Anthrosols: Indicators of Prehistoric Human Occupation in the inland Pilbara, Western Australia.} \textit{Journal of Archaeological Science} 32: 1357-1368.
 
-\ind \textbf{Marwick, B.} 2003. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2003_CAJ.pdf}{Pleistocene exchange networks as evidence for the evolution of language.} \textit{Cambridge Archaeological Journa}l 17(1):67-81. 
+\ind \textbf{Marwick, B.} 2003. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2003_CAJ.pdf}{Pleistocene exchange networks as evidence for the evolution of language.} \textit{Cambridge Archaeological Journa}l 17(1):67-81.
 
 \ind \textbf{Marwick, B.} 2002a. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2002_Tempus.pdf}{Milly’s Cave: Evidence for Human Occupation of the Inland Pilbara during the Last Glacial Maximum.} \textit{Tempus} 21-33.
 
@@ -220,19 +269,37 @@
 
 \marginhead{\sffamily {{\vskip -0.35em} peer reviewed \newline book chapters}}
 
+\ind \textbf{Marwick, B.} and B. Bouasisengpaseuth accepted, in press. The history and practice of archaeology in Laos. In Junko Habu, Peter Lape, John Olsen  and Jing Zhichun (eds) Handbook of East and Southeast Asian Archaeology. Springer.
+
+\ind \textbf{Marwick, B.} accepted, in press. The Hoabinhian of Southeast Asia and its Relationship to Regional Pleistocene Lithic Technologies. In Erick Robinson and Frédéric Sellet (eds) Lithic Technological Organization and Paleoenvironmental Change: Global and Diachronic Perspectives. Springer.
+
+\ind Bulbeck, D. and \textbf{B. Marwick}. 2017. Stone Industries of Mainland and Island Southeast Asia. In Nam Kim and Charles Higham (eds) \textit{Handbook of Southeast Asian Archaeology.} Oxford University Press.
+
+\ind Rokem, A. \textbf{B. Marwick}, and V. Staneva 2017 \href{https://www.practicereproducibleresearch.org/core-chapters/2-assessment.html}{Assessing Reproducibility.} In Justin Kitzes, Daniel Turek, Fatma Deniz (eds) \textit{The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences.} University of California Press.
+
+\ind Ram, K. and \textbf{B. Marwick} 2017 \href{https://www.practicereproducibleresearch.org/core-chapters/6-future.html}{Building Towards a Future Where Reproducible, Open Science is the Norm.} In Justin Kitzes, Daniel Turek, Fatma Deniz (eds) \textit{The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences.} University of California Press.
+
+\ind \textbf{Marwick, B.} 2017 \href{https://www.practicereproducibleresearch.org/case-studies/benmarwick.html}{Using R and Related Tools for Reproducible Research in Archaeology.} In Justin Kitzes, Daniel Turek, Fatma Deniz (eds) \textit{The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences.} University of California Press. 
+
+\ind Kretzler, I. and \textbf{B. Marwick} 2015 \href{http://faculty.washington.edu/bmarwick/PDFs/Kretzler_Marwick_2014_Chacmool.pdf}{Investigating Archaeologists' Engagement With Feminist Theory Using Textual Macroanalysis: 25 Years after Chacmool 1989}. \textit{Breaking barriers: Proceedings of the 47th Annual Chacmool Archaeological Conference November 7-9, 2014 Calgary, Alberta, Canada}. Robyn Crook, Kim Edwards and Colleen Hughes (eds). The University of Calgary, Chacmool Archaeological Association. pp. 158-168
+
 \ind \textbf{Marwick, B.} 2013. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2013_DMAR.pdf}{Text mining and topic modeling for discovery of current issues in Anthropology using microblog content.} In  Yanchang Zhao and Yonghua Cen (eds) \textit{Data Mining Applications with R.} Elsevier. p. 63-93.
 
-\ind \textbf{Marwick, B.}, R. Shoocongdej, C. Thongcharoenchaikit, B. Chaisuwan, C. Khowkhiew and S. Kwak.  2013. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_et_al_2013_community.pdf}{Hierarchies of engagement and understanding: Community engagement during archaeological excavations at Khao Toh Chong rockshelter, Krabi, Thailand.} In O’Connor, S (ed.) \textit{Transcending the Culture-Nature Divide in Cultural Heritage: Views from the Asia-Pacific Region}. Terra Australis, ANU E Press. 
+\ind \textbf{Marwick, B.}, R. Shoocongdej, C. Thongcharoenchaikit, B. Chaisuwan, C. Khowkhiew and S. Kwak.  2013. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_et_al_2013_community.pdf}{Hierarchies of engagement and understanding: Community engagement during archaeological excavations at Khao Toh Chong rockshelter, Krabi, Thailand.} In O’Connor, S (ed.) \textit{Transcending the Culture-Nature Divide in Cultural Heritage: Views from the Asia-Pacific Region}. Terra Australis, ANU E Press.
 
-\ind \textbf{Marwick, B.} 2012. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2012_Buddha_cladistics.pdf}{Transmission of craft traditions in bronze Buddha manufacturing in ancient Thailand: A pilot study of the Griswold collection using cladistic techniques.} In Dominik Bonatz, Andreas Reinecke, Mai Lin Tjoa-Bonatz (eds.)\textit{ Connecting Empires and States: Selected Papers from the 13th Conference of the European Association of Southeast Asian Archaeologists.} National University of Singapore Press, Singapore. pp. 161-178. 
+\ind \textbf{Marwick, B.} 2012. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2012_Buddha_cladistics.pdf}{Transmission of craft traditions in bronze Buddha manufacturing in ancient Thailand: A pilot study of the Griswold collection using cladistic techniques.} In Dominik Bonatz, Andreas Reinecke, Mai Lin Tjoa-Bonatz (eds.)\textit{ Connecting Empires and States: Selected Papers from the 13th Conference of the European Association of Southeast Asian Archaeologists.} National University of Singapore Press, Singapore. pp. 161-178.
 
-\ind Mackay, A. and \textbf{B. Marwick} 2011. \href{http://faculty.washington.edu/bmarwick/PDFs/Mackay_and_Marwick_2011_timecost.pdf}{Costs and benefits in technological decision making under variable conditions: examples from the late Pleistocene in southern Africa.} In \textbf{B. Marwick} and A. Mackay (eds.) \textit{Keeping Your Edge: Recent Approaches to the Organisation of Stone Artefact Technology}. British Archaeological Reports.  pp. 119-134 
+\ind Mackay, A. and \textbf{B. Marwick} 2011. \href{http://faculty.washington.edu/bmarwick/PDFs/Mackay_and_Marwick_2011_timecost.pdf}{Costs and benefits in technological decision making under variable conditions: examples from the late Pleistocene in southern Africa.} In \textbf{B. Marwick} and A. Mackay (eds.) \textit{Keeping Your Edge: Recent Approaches to the Organisation of Stone Artefact Technology}. British Archaeological Reports.  pp. 119-134
 
-\ind \textbf{Marwick, B.} 2008. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2008_EurASEAA.pdf}{Human Behavioural Ecology and Stone Artefacts in Northwest Thailand during the Terminal Pleistocene and Holocene.} Jean-Pierre Pautreau (ed) \textit{Southeast Asian Prehistory: The 11th EurASEAA}. Musée de Bougon: Paris. pp. 37-49. 
+\ind \textbf{Marwick, B.} 2008. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2008_EurASEAA.pdf}{Human Behavioural Ecology and Stone Artefacts in Northwest Thailand during the Terminal Pleistocene and Holocene.} Jean-Pierre Pautreau (ed) \textit{Southeast Asian Prehistory: The 11th EurASEAA}. Musée de Bougon: Paris. pp. 37-49.
 
 \bigskip
 
 \marginhead{\sffamily {{\vskip -0.35em} book reviews \newline (no outside \newline peer review)}}
+
+\ind \textbf{Marwick, B.} 2015a. \href{https://www.academia.edu/15214960/Review_of_Geoarchaeology_of_Aboriginal_Landscapes_in_Semi-Arid_Australia._Simon_J._Holdaway_and_Patricia_C._Fanning._2014._CSIRO_Collingwood._Geoarchaeology_Article_first_published_online_26_AUG_2015_DOI_10.1002_gea.21522}{Review of "Geoarchaeology of Aboriginal Landscapes in Semi-Arid Australia." Simon J. Holdaway and Patricia C. Fanning. 2014. CSIRO, Collingwood} \textit{Geoarchaeology}  DOI: 10.1002/gea.21522
+
+\ind \textbf{Marwick, B.} 2015b. \href{http://intarch.ac.uk/journal/issue39/3/comms.cfm#tabs-3}{Films, digs and death: a review of the Project Eliseg video} \textit{Internet Archaeology} DOI: http://dx.doi.org/10.11141/ia.39.3.com3
 
 \ind \textbf{Marwick, B.} 2009a. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2009_AA_Stark_Review.pdf}{Review of “Cultural Transmission and Material Culture: Breaking Down Boundaries.” Miriam Stark, Brenda Bowser and Lee Horne, eds. Tucson: University of Arizona Press, 2008.} \textit{American Anthropologist} 111(4): 540-541
 
@@ -254,13 +321,15 @@
 
 \marginhead{\sffamily {{\vskip -0.35em} editor-reviewed \newline publications \newline (no outside \newline peer review)}}
 
+\ind \textbf{Marwick, B.} 2016 \href{https://theconversation.com/how-computers-broke-science-and-what-we-can-do-to-fix-it-49938}{How computers broke science - and what we can do to fix it}. \textit{The Conversation} 15 Nov 2015.  Syndicated on \href{http://gizmodo.com/how-computers-broke-science-and-what-we-can-do-to-fix-i-1741649207}{Gizmodo}, \href{http://www.geekwire.com/2015/how-computers-broke-science-and-what-we-can-do-to-fix-it/}{Geekwire}, \href{http://qz.com/548730/computers-are-making-science-extremely-challenging-for-scientists/}{Quartz}, \href{http://www.netzpiloten.de/wissenschaft-computer-reproduzierbarkeit-probleme/}{Netzpiloten (in German)}, \href{http://filled-with-deities.hatenablog.jp/entry/2015/11/17/202013}{書は人間の夢を見るか (in Japanese)}, and \href{https://theconversation.com/les-ordinateurs-nuisent-gravement-a-la-science-mais-il-est-possible-dy-remedier-1-52024}{The Conversation (in French)}.
+
 \ind \textbf{Marwick, B.} and A. Mackay 2011. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_and_Mackay_2011_intro.pdf}{Keeping your edge: Recent approaches to the organisation of stone artefact technology.} In \textbf{B. Marwick} and A. Mackay (eds.) \textit{Keeping Your Edge: Recent Approaches to the Organisation of Stone Artefact Technology}. British Archaeological Reports.  pp. 1-4.
 
 \ind White, J.C., Lewis, H., Bouasisengpaseuth, B., \textbf{Marwick, B.} and K. Arrell 2009. \href{http://faculty.washington.edu/bmarwick/PDFs/White_et_al_2009_Antiquity.pdf}{Archaeological investigations in northern Laos: New contributions to Southeast Asian prehistory.} \textit{Antiquity} 83(319) Project Gallery
 
 \ind \textbf{Marwick, B.}, White, J.C., B. Bouasisengpaseuth 2009. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_et_al_2009_MMAP.pdf}{The Middle Mekong Archaeology Project and International Collaboration in Luang Prabang, Laos.} \textit{SAA Archaeological Record} 9 (3) 25-27
 
-\ind \textbf{Marwick, B.} 2006. A Methodological Study of Technological Attributes in Hoabinhian Lithic Assemblages. In R. Shoocondej (ed.)  \textit{Social, Cultural and Environmental Dynamics in the Highlands of Pangmapha, Mae Hong Son Province: Integrated Archaeological Research into the Region}. Highland Archaeology Project in Pangmapha: Bangkok. pp. 231-244. 
+\ind \textbf{Marwick, B.} 2006. A Methodological Study of Technological Attributes in Hoabinhian Lithic Assemblages. In R. Shoocondej (ed.)  \textit{Social, Cultural and Environmental Dynamics in the Highlands of Pangmapha, Mae Hong Son Province: Integrated Archaeological Research into the Region}. Highland Archaeology Project in Pangmapha: Bangkok. pp. 231-244.
 
 \ind \textbf{Marwick, B.} 2004. \href{http://faculty.washington.edu/bmarwick/PDFs/Marwick_2004_AACAI.pdf}{Future directions for research into open sites and rockshelters in the inland Pilbara.} \textit{Australian Association of Consulting Archaeologists Inc. Newsletter} 95:14-18.
 

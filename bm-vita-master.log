@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300) (preloaded format=xelatex 2017.5.30)  7 FEB 2018 09:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300) (preloaded format=xelatex 2017.5.30)  7 FEB 2018 10:33
 entering extended mode
 **./bm-vita-master.tex
 (bm-vita-master.tex
@@ -1885,13 +1885,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 )
 [1
 
-]) (bm-vita-sub-awards.tex) [2] (bm-vita-sub-talks.tex
-Overfull \hbox (52.12889pt too wide) in paragraph at lines 17--18
-\TU/LinuxLibertine(0)/m/n/10.95 Marwick, B. 2017. hrefhttps://github.com/benmar
-wick/berlinsummerschoolkeynote“Extracting
- []
-
-[3]
+]) (bm-vita-sub-awards.tex) [2] (bm-vita-sub-talks.tex [3]
 Overfull \hbox (7.32733pt too wide) in paragraph at lines 67--68
 \TU/LinuxLibertine(0)/m/n/10.95 Northwest Thailand) During the Late Pleistocene
  and Holocene.” Peer-reviewed

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300) (preloaded format=xelatex 2017.5.30)  7 FEB 2018 10:57
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6300) (preloaded format=xelatex 2017.5.30)  7 FEB 2018 11:15
 entering extended mode
 **./bm-biblio-master.tex
 (bm-biblio-master.tex
@@ -1209,14 +1209,10 @@ neric.tex")
 .................................................
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fontawesome\fontawesomesymbols-xe
-luatex.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\gitinfo2\gitinfo2.sty"
-Package: gitinfo2 2015/11/22 v2.0.7 git revision information
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
-)
-(.git/gitHeadInfo.gin)
+luatex.tex")) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\gitinfo\gitinfo.sty
+"
+Package: gitinfo 2011/08/10 v1.00 git revision information
+ (gitHeadInfo.gin)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\gitinfo\gitsetinfo.sty"
 Package: gitsetinfo 2011/08/10 v1.00 Auxiliary package for gitinfo
 ))
@@ -2250,7 +2246,17 @@ might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 l.205 ...bf{Marwick, B.}, Khaing, K., Douka, K., &
-                                                   Roberts, R. G. 2018 pIRIR...
+                                                   Roberts, R. G. 2018 \href...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.207 \ind \textbf{Marwick, B.}, Boettiger, C., &
+                                                  Mullen, L. 2017 \href{http...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2262,70 +2268,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `NotoSansCJKJP' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-! Misplaced alignment tab character &.
-l.207 \ind \textbf{Marwick, B.}, Boettiger, C., &
-                                                  Mullen, L. 2017 \href{http...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Overfull \hbox (117.95316pt too wide) in paragraph at lines 207--208
-\TU/LinuxLibertine(0)/m/n/10.95 cibly using R (and friends).[][] \TU/LinuxLiber
-tine(0)/m/it/10.95 The American Statistician \TU/LinuxLibertine(0)/m/n/10.95 DO
-I: https://doi.org/10.1080/00031305.2017.1375986
- []
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.209 ...i.org/10.17605/OSF.IO/QWFCZ}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.211 ...i.org/10.17605/OSF.IO/EDZXS}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.213 ...i.org/10.17605/OSF.IO/EDZXS}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.219 ...10.6084/m9.figshare.2065602}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+Runaway argument?
+{code \& data 
+! Paragraph ended before \href@split was complete.
+<to be read again> 
+                   \par 
+l.212 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
 Overfull \hbox (5.8673pt too wide) in paragraph at lines 219--220
@@ -2333,44 +2285,10 @@ Overfull \hbox (5.8673pt too wide) in paragraph at lines 219--220
 annah Van Vlack; Cyler Conrad; Rasmi Shoocongdej; Cholawit Thong-
  []
 
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.221 .../10.6084/m9.figshare.985406}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Argument of \href@split has an extra }.
-<inserted text> 
-                \par 
-l.223 ...marwick/Steele_et_al_VR003_MSA_Pigments}}
-                                                  {code & data}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \href@split was complete.
-<to be read again> 
-                   \par 
-l.223 ...marwick/Steele_et_al_VR003_MSA_Pigments}}
-                                                  {code & data}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 LaTeX Font Info:    Font shape `TU/Ubuntu(0)/m/n' will be
-(Font)              scaled to size 7.884pt on input line 223.
+(Font)              scaled to size 7.884pt on input line 224.
 LaTeX Font Info:    Font shape `TU/Ubuntu(0)/m/n' will be
-(Font)              scaled to size 6.48001pt on input line 223.
+(Font)              scaled to size 6.48001pt on input line 224.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -2378,81 +2296,11 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 [1
 
 ]
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.223 ...marwick/Steele_et_al_VR003_MSA_Pigments}}
-                                                  {code & data}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Misplaced alignment tab character &.
-l.223 .../Steele_et_al_VR003_MSA_Pigments}}{code &
-                                                   data}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.225 ...//hdl.handle.net/1928/26730}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.231 ...excavation-report-Madjebebe}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.233 ...ks-and-burials-at-Madjebebe}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
 Overfull \hbox (28.37347pt too wide) in paragraph at lines 233--234
 \TU/LinuxLibertine(0)/m/n/10.95 Arnhem Land[][], Australia. \TU/LinuxLibertine(
 0)/m/it/10.95 Archaeology in Oceania \TU/LinuxLibertine(0)/m/n/10.95 49:148-157
 . DOI: 10.1002/arco.5039
  []
-
-! Misplaced alignment tab character &.
-<argument> code &
-                  data
-l.235 ...-size-analysis-Putslaagte-1}{code & data}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
 <argument> code &
@@ -2466,91 +2314,4 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[2] [3]
-Overfull \hbox (8.01152pt too wide) in paragraph at lines 295--296
-\TU/LinuxLibertine(0)/m/n/10.95 Community engagement during archaeological exca
-vations at Khao Toh Chong
- []
-
-[4]
-Overfull \hbox (19.9365pt too wide) in paragraph at lines 317--318
-\TU/LinuxLibertine(0)/bx/n/10.95 Marwick, B. \TU/LinuxLibertine(0)/m/n/10.95 20
-06. [][]What can archaeology do with Boyd and Richerson\TU/NotoSansCJKJP(0)/m/n
-/10.95 ’| \TU/LinuxLibertine(0)/m/n/10.95 s Co-evolutionary
- []
-
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
-[]\TU/LinuxBiolinum(0)/m/n/9 editor-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.333 ...AA_Record_Sept_2017_Final_LR.pdf#page=10}
-                                                  . \textit{SAA Archaeologic...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 333.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 333.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 333.
-! You can't use `macro parameter character #' in math mode.
-<argument> .../SAA_Record_Sept_2017_Final_LR.pdf##
-                                                  page=10
-l.333 ...AA_Record_Sept_2017_Final_LR.pdf#page=10}
-                                                  . \textit{SAA Archaeologic...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.333 ...AA_Record_Sept_2017_Final_LR.pdf#page=10}
-                                                  . \textit{SAA Archaeologic...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (112.17947pt too wide) in paragraph at lines 333--334
-\TU/LinuxLibertine(0)/m/n/10.95 ters, J., and Wren, C. D. (2017) [][]http://www
-.saa.org/Portals/0/SAA$[]\OML/cmm/m/it/10.95 ecord[]ept[]\OT1/cmr/m/n/10.95 017
-[]\OML/cmm/m/it/10.95 inal[]R:pdfpage \OT1/cmr/m/n/10.95 =
- []
-
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
- (bm-biblio-master.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 350.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 350.
-Package logreq Info: Writing requests to 'bm-biblio-master.run.xml'.
-\openout1 = `bm-biblio-master.run.xml'.
-
- )
-(\end occurred inside a group at level 5)
-
-### semi simple group (level 5) entered at line 223 (\begingroup)
-### simple group (level 4) entered at line 223 ({)
-### simple group (level 3) entered at line 221 ({)
-### simple group (level 2) entered at line 215 ({)
-### simple group (level 1) entered at line 213 ({)
-### bottom level 
-Here is how much of TeX's memory you used:
- 38872 strings out of 427867
- 698200 string characters out of 3151872
- 1409898 words of memory out of 3000000
- 42518 multiletter control sequences out of 15000+200000
- 7990 words of font info for 71 fonts, out of 3000000 for 9000
- 1314 hyphenation exceptions out of 8191
- 50i,11n,85p,10439b,5963s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-Output written on bm-biblio-master.pdf (7 pages).
+[2

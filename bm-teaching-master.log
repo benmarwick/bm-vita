@@ -1,4 +1,8 @@
+<<<<<<< HEAD:bm-teaching-master.log
 This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  10 JUN 2014 21:59
+=======
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9) (preloaded format=xelatex 2014.2.25)  10 JUN 2014 22:53
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 entering extended mode
 **bm-teaching-master.tex
 ("E:\My Documents\My UW\Benefits\Tenure\bm-teaching\bm-teaching-master.tex"
@@ -1444,7 +1448,11 @@ Requested font "Linux Libertine" at 10.95pt
  -> G^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> \^^B/Windows/Fonts/LinLibertine_Rah.ttf
+<<<<<<< HEAD:bm-teaching-master.log
 \g_fontspec_family_Linux Libertine_int=\count403
+=======
+\g_fontspec_family_Linux Libertine_int=\count397
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 Requested font "Linux Libertine/ICU" at 10.95pt
  -> q^^B/Windows/Fonts/LinLibertine_Rah.ttf
 Requested font "Linux Libertine/ICU" at 10.95pt
@@ -1519,7 +1527,11 @@ Requested font "Linux Biolinum" at 10.95pt
  -> ^^R^^C/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Biolinum/ICU" at 10.95pt
  -> ^^Y^^C/Windows/Fonts/LinBiolinum_Rah.ttf
+<<<<<<< HEAD:bm-teaching-master.log
 \g_fontspec_family_Linux Biolinum_int=\count404
+=======
+\g_fontspec_family_Linux Biolinum_int=\count398
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 Requested font "Linux Biolinum/ICU" at 10.95pt
  ->  ^^C/Windows/Fonts/LinBiolinum_Rah.ttf
 Requested font "Linux Biolinum/ICU" at 10.95pt
@@ -1599,7 +1611,11 @@ Requested font "Ubuntu" at 10.95pt
  -> ^^[^^E/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
  -> R^^E/Windows/Fonts/Ubuntu-R.ttf
+<<<<<<< HEAD:bm-teaching-master.log
 \g_fontspec_family_Ubuntu_int=\count405
+=======
+\g_fontspec_family_Ubuntu_int=\count399
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 Requested font "Ubuntu/ICU" at 10.95pt
  -> \^^E/Windows/Fonts/Ubuntu-R.ttf
 Requested font "Ubuntu/ICU" at 10.95pt
@@ -1696,6 +1712,7 @@ Package microtype Info: Loading generic settings for font family
 Requested font "Linux Biolinum/ICU:script=latn;language=DFLT;mapping=tex-text;+
 liga;color=AA0000FF ;" at 9.0pt
  -> *^^D/Windows/Fonts/LinBiolinum_Rah.ttf
+<<<<<<< HEAD:bm-teaching-master.log
 Requested font "Gill Sans MT:mapping=tex-text;+onum" at 8.03pt
  -> H^^T/Windows/Fonts/GIL_____.TTF
 Requested font "Gill Sans MT/B" at 8.03pt
@@ -1820,15 +1837,32 @@ LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 7.88
 4pt
  -> ã^^E/Windows/Fonts/Ubuntu-R.ttf
+=======
+Requested font "Linux Libertine/ICU:script=latn;language=DFLT;mapping=tex-text;
++onum;+liga;+smcp;" at 10.95pt
+ -> §^^F/Windows/Fonts/LinLibertine_Rah.ttf
+LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
+(Font)              scaled to size 7.884pt on input line 202.
+Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 7.88
+4pt
+ -> ^^E^^[/Windows/Fonts/Ubuntu-R.ttf
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Ubuntu' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU1/Ubuntu(0)/m/n' will be
+<<<<<<< HEAD:bm-teaching-master.log
 (Font)              scaled to size 6.48001pt on input line 258.
 Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 6.48
 001pt
  -> ^^81^^H/Windows/Fonts/Ubuntu-R.ttf
+=======
+(Font)              scaled to size 6.48001pt on input line 202.
+Requested font "Ubuntu/ICU:script=latn;language=DFLT;mapping=tex-text;" at 6.48
+001pt
+ -> £^^]/Windows/Fonts/Ubuntu-R.ttf
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -1836,6 +1870,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ]
+<<<<<<< HEAD:bm-teaching-master.log
 Requested font "Gill Sans MT/B" at 8.03pt
  -> µ^^A/Windows/Fonts/GILB____.TTF
 
@@ -1974,5 +2009,30 @@ Here is how much of TeX's memory you used:
  8854 words of font info for 68 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
  60i,19n,48p,10448b,2428s stack positions out of 5000i,500n,10000p,200000b,50000s
+=======
+Requested font "Linux Libertine/I/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;+onum;+liga;" at 10.95pt
+ -> ^^P^^G/Windows/Fonts/LinLibertine_RIah.ttf
+Requested font "Linux Libertine/B/ICU:script=latn;language=DFLT;mapping=tex-tex
+t;+onum;+liga;" at 10.95pt
+ -> ÿÿ/Windows/Fonts/LinLibertine_RZah.ttf
+ [2] [3] [4] [5] [6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
+
+("E:\My Documents\My UW\Benefits\Tenure\bm-narrative\bm-narrative-master.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 262.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 262.
+Package logreq Info: Writing requests to 'bm-narrative-master.run.xml'.
+ ) 
+Here is how much of TeX's memory you used:
+ 33291 strings out of 429025
+ 589952 string characters out of 3166798
+ 1167788 words of memory out of 3000000
+ 36245 multiletter control sequences out of 15000+200000
+ 5575 words of font info for 51 fonts, out of 3000000 for 9000
+ 912 hyphenation exceptions out of 8191
+ 60i,12n,48p,10449b,2428s stack positions out of 5000i,500n,10000p,200000b,50000s
+>>>>>>> bm-narrative/master:bm-narrative-master.log
 
 Output written on bm-teaching-master.pdf (3 pages).

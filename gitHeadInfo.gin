@@ -1,5 +1,6 @@
 \usepackage[%
 <<<<<<< HEAD
+<<<<<<< HEAD
 		shash={f54caf2},
 		lhash={f54caf2c7a122e395ba93e3b09259babc8c7951d},
 		authname={Ben Marwick},
@@ -26,6 +27,20 @@
 		commsdate={2014-06-10},
 		commidate={2014-06-10 01:48:00 -0700},
 		commudate={1402390080},
+=======
+		shash={160c3c9},
+		lhash={160c3c94c38e25452784b632648eb47e0cda6506},
+		authname={Ben Marwick},
+		authemail={benmarwick@gmail.com},
+		authsdate={2014-06-10},
+		authidate={2014-06-10 22:40:41 -0700},
+		authudate={1402465241},
+		commname={Ben Marwick},
+		commemail={benmarwick@gmail.com},
+		commsdate={2014-06-10},
+		commidate={2014-06-10 22:40:41 -0700},
+		commudate={1402465241},
+>>>>>>> bm-narrative/master
 		refnames={ (HEAD, master)}
 >>>>>>> bm-teaching/master
 	]{gitsetinfo}

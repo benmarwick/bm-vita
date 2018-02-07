@@ -1,4 +1,5 @@
 \usepackage[%
+<<<<<<< HEAD
 		shash={f54caf2},
 		lhash={f54caf2c7a122e395ba93e3b09259babc8c7951d},
 		authname={Ben Marwick},
@@ -12,4 +13,19 @@
 		commidate={2018-02-07 12:27:39 -0800},
 		commudate={1518035259},
 		refnames={ (HEAD -> master)}
+=======
+		shash={c055b91},
+		lhash={c055b9127075168d57b520974bdc4a1f9eecf2d4},
+		authname={Ben Marwick},
+		authemail={benmarwick@gmail.com},
+		authsdate={2014-06-10},
+		authidate={2014-06-10 01:48:00 -0700},
+		authudate={1402390080},
+		commname={Ben Marwick},
+		commemail={benmarwick@gmail.com},
+		commsdate={2014-06-10},
+		commidate={2014-06-10 01:48:00 -0700},
+		commudate={1402390080},
+		refnames={ (HEAD, master)}
+>>>>>>> bm-teaching/master
 	]{gitsetinfo}

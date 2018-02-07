@@ -1,46 +1,15 @@
 \usepackage[%
-<<<<<<< HEAD
-<<<<<<< HEAD
-		shash={f54caf2},
-		lhash={f54caf2c7a122e395ba93e3b09259babc8c7951d},
+		shash={ebf3c26},
+		lhash={ebf3c26d237320a408e03df74b0743d59bc0513d},
 		authname={Ben Marwick},
 		authemail={bmarwick@uw.edu},
 		authsdate={2018-02-07},
-		authidate={2018-02-07 12:27:39 -0800},
-		authudate={1518035259},
+		authidate={2018-02-07 13:25:33 -0800},
+		authudate={1518038733},
 		commname={Ben Marwick},
 		commemail={bmarwick@uw.edu},
 		commsdate={2018-02-07},
-		commidate={2018-02-07 12:27:39 -0800},
-		commudate={1518035259},
+		commidate={2018-02-07 13:25:33 -0800},
+		commudate={1518038733},
 		refnames={ (HEAD -> master)}
-=======
-		shash={c055b91},
-		lhash={c055b9127075168d57b520974bdc4a1f9eecf2d4},
-		authname={Ben Marwick},
-		authemail={benmarwick@gmail.com},
-		authsdate={2014-06-10},
-		authidate={2014-06-10 01:48:00 -0700},
-		authudate={1402390080},
-		commname={Ben Marwick},
-		commemail={benmarwick@gmail.com},
-		commsdate={2014-06-10},
-		commidate={2014-06-10 01:48:00 -0700},
-		commudate={1402390080},
-=======
-		shash={160c3c9},
-		lhash={160c3c94c38e25452784b632648eb47e0cda6506},
-		authname={Ben Marwick},
-		authemail={benmarwick@gmail.com},
-		authsdate={2014-06-10},
-		authidate={2014-06-10 22:40:41 -0700},
-		authudate={1402465241},
-		commname={Ben Marwick},
-		commemail={benmarwick@gmail.com},
-		commsdate={2014-06-10},
-		commidate={2014-06-10 22:40:41 -0700},
-		commudate={1402465241},
->>>>>>> bm-narrative/master
-		refnames={ (HEAD, master)}
->>>>>>> bm-teaching/master
 	]{gitsetinfo}

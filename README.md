@@ -39,6 +39,15 @@ Some of the LaTeX packages include:
 - enumitem   
 - xeCJK     
 
+If these are missing, we can
+
+```
+library(tinytex)
+tlmgr_search('/times.sty')   # search for times.sty
+tlmgr_install('psnfss')      # install the psnfss package
+tlmgr_update() 
+```
+
 Fonts:
 
 - Linux Libertine  http://www.linuxlibertine.org/index.php?id=2&L=1  

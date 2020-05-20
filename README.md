@@ -56,6 +56,8 @@ tlmgr_install('fontawesome')
 tlmgr_install('gitinfo') 
 tlmgr_install('libertine')
 tlmgr_install('fontspec')
+tlmgr_install('xecjk')
+tlmgr_install('ctex')
 tlmgr_update() 
 ```
 

@@ -2,6 +2,8 @@ These are the source files for my CV, bibliography, and narrative
 
 When editing, remember to escape &, #, _ etc with \
 
+To generate the PDF, run `tinytex::tlmgr_update()` to update LaTeX packages (since I do this so infrequently), then in RStudio, click 'compile PDF' for `bm-vita-master.tex`
+
 ## CV
 
 Start with editing bm-vita-master.tex to format the top matter. Then edit these to update actual content:
@@ -45,6 +47,15 @@ If these are missing, we can
 library(tinytex)
 tlmgr_search('/times.sty')   # search for times.sty
 tlmgr_install('psnfss')      # install the psnfss package
+tlmgr_install('memoir')     # install  memoir.cls
+tlmgr_install('soul')     # install  soul.sty
+tlmgr_install('textcase') 
+tlmgr_install('biblatex-chicago') 
+tlmgr_install('xstring') 
+tlmgr_install('fontawesome') 
+tlmgr_install('gitinfo') 
+tlmgr_install('libertine')
+tlmgr_install('fontspec')
 tlmgr_update() 
 ```
 

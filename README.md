@@ -1,4 +1,4 @@
-These are the source files for my CV, bibliography, and narrative
+These are the source files for my CV, bibliography, and narrative. The PDF output looks beautiful, I think. But it's extremely time-consuming to update and maintain since this is the only document that use LaTeX for.
 
 When editing, remember to escape &, #, _ etc with \
 

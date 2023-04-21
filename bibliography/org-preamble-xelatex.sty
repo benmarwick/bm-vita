@@ -32,8 +32,6 @@
 \RequirePackage{url}
 \RequirePackage{rotating}
 \RequirePackage{memoir-article-styles}
-\RequirePackage[american]{babel}
-\RequirePackage[babel]{csquotes}
 \RequirePackage[svgnames]{xcolor}
 \RequirePackage{soul}
 \RequirePackage[xetex, colorlinks=true, urlcolor=DarkSlateBlue,
@@ -42,13 +40,7 @@ pdfpagelabels, bookmarksnumbered]{hyperref}
 \RequirePackage{etoolbox}
 
 %% Biblatex
-\RequirePackage[authordate, backend=biber, babel=hyphen, bibencoding=inputenc, strict, isbn=false, uniquename=false]{biblatex-chicago} % biblatex setup
-% \RequirePackage[style=authoryear,
-%             bibstyle=authoryear,
-%             citestyle=authoryear,
-%             %natbib=true,
-%             hyperref=true,
-%             backend=biber, babel=hyphen, bibencoding=inputenc]{biblatex}
+\RequirePackage[authordate, backend=biber, autolang=hyphen, bibencoding=inputenc, strict, isbn=false, uniquename=false]{biblatex-chicago} % biblatex setup
 
 %% Fix biblatex's odd preference for using In: by default.
 \renewbibmacro{in:}{%

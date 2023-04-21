@@ -81,9 +81,5 @@
     <requires type="dynamic">
       <file>bm-vita-master.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>/Users/kjhealy/Documents/bibs/socbib.bib</file>
-      <file>/Users/kjhealy/Documents/bibs/socbib-pandoc.bib</file>
-    </requires>
   </external>
 </requests>

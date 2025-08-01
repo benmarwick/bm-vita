@@ -47,8 +47,8 @@ If these are missing, we can
 library(tinytex)
 tlmgr_search('/times.sty')   # search for times.sty
 tlmgr_install('psnfss')      # install the psnfss package
-tlmgr_install('memoir')     # install  memoir.cls
-tlmgr_install('soul')     # install  soul.sty
+tlmgr_install('memoir')      # install  memoir.cls
+tlmgr_install('soul')        # install  soul.sty
 tlmgr_install('textcase') 
 tlmgr_install('biblatex-chicago') 
 tlmgr_install('xstring') 
@@ -58,6 +58,7 @@ tlmgr_install('libertine')
 tlmgr_install('fontspec')
 tlmgr_install('xecjk')
 tlmgr_install('ctex')
+tlmgr_install('greek-fontenc')
 tlmgr_update() 
 ```
 
